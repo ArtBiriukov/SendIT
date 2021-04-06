@@ -13,15 +13,17 @@
   <div class="header container">
     <div class="nav">
       <a href="#" class="logo"><img src="img/logo.svg" alt="Logo"></a>
-      <ul class="navbar">
-        <li class="navbar__item"><a class="navbar__link" href="#">Главная</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">Описание</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">Преимущества</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">Партнёры</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">Гарантии</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="#">FAQ</a></li>
-      </ul>
+      <nav class="navbar">
+        <ul class="navbar">
+          <li class="navbar__item"><a class="navbar__link" href="#">Главная</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Описание</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Преимущества</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Отзывы</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Партнёры</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">Гарантии</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#">FAQ</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="offer">
       <h1 class="offer__title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
@@ -35,10 +37,10 @@
   <div class="description__item container">
     <div class="description__img"></div>
     <div class="discription__contant">
-      <h2 class="heading">
+      <h2 class="discription__heading heading">
         Мы – агрегатор служб доставки
       </h2>
-      <p class="text">
+      <p class="discription__text text">
         С нами удобно вам, вашим клиентам и курьерским службам.
         Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а
         вы получаете надежный сервис в подарок!
@@ -70,9 +72,10 @@
   </div>
 </section>
 
-<section class="step__care">
-  <div class="care container">
-    <h2 class="care__title">Мы берём все заботы по доставке на себя!</h2> <a href="#" class="btn">отправить посылку</a>
+<section class="step-care">
+  <div class="step-care__body container">
+    <h2 class="step-care__title">Мы берём все заботы по доставке на себя!</h2> <a href="#" class="btn">отправить
+      посылку</a>
   </div>
 </section>
 
@@ -84,13 +87,85 @@
     </div>
     <div class="call__right">
       <form class="call__form" action="#">
-        <input type="tel" name="phone" id="phone" value="Ваш телефон">
-        <button type="submit">заказать звонок</button>
+        <input class="call__input" type="tel" name="phone" id="phone" value="Ваш телефон">
+        <button class="call__btn" type="submit">заказать звонок</button>
         <input type="checkbox" name="agrea" id="agrea">
-        <label for="agrea">Я согласен на обработку персональных данных</label>
+        <label for="agrea"> <span class="text-notific">Я согласен на обработку персональных данных</span> </label>
       </form>
-
     </div>
+  </div>
+
+</section>
+
+<section class="review container">
+  <h2 class="heading">отзывы</h2>
+  <div class="review__slider">
+    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <div class="review__items">
+      <div class="review__item">
+        <div class="review__content">
+          <img src="img/img1.jpg" alt="Photo" class="review__photo">
+          <div class="review-about">
+            <h3 class="review-about__name heading">Дарья</h3>
+            <p class="review-about__company">La Intuicion</p>
+            <p class="review-about__text review__text">Посылка: <span class="review__text">товары</span></p>
+            <p class="review-about__text review__text">Откуда: <span class="review__text">Москва</span></p>
+            <p class="review-about__text review__text">Куда: <span class="review__text">Нижневартовск</span></p>
+          </div>
+        </div>
+        <div class="review__text">Отличный и качественный сервис.
+          Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что
+          помимо
+          удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
+          (ведение
+          адресной базы, выбор и вызов курьера в пару кликов).</div>
+      </div>
+      <div class="review__item">
+        <div class="review__content">
+          <img src="img/img2.jpg" alt="Photo" class="review__photo">
+          <div class="review-about">
+            <h3 class="review-about__name heading">Елена</h3>
+            <p class="review-about__company">Global Logic</p>
+            <p class="review-about__text review__text">Посылка: <span class="review__text">товары</span></p>
+            <p class="review-about__text review__text">Откуда: <span class="review__text">Москва</span></p>
+            <p class="review-about__text review__text">Куда: <span class="review__text">Калининград</span></p>
+          </div>
+        </div>
+        <div class="review__text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
+          доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё
+          это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
+          отзывчивость.</div>
+      </div>
+    </div>
+
+
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+
+
+  </div>
+
+
+
+</section>
+
+
+
+<section class="advantages">
+  <div class="advantages__body container">
+    <h2 class="heading">НАШИ ПРЕИМУЩЕСТВА</h2>
+    <div class="advantages__items">
+      <div class="advantages__item">
+        <div class="advantages__img"></div>
+        <div class="advantages__text">Бесплатный сервис</div>
+      </div>
+    </div>
+
   </div>
 
 </section>
