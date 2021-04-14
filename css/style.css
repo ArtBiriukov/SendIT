@@ -283,10 +283,19 @@ header {
   padding-bottom: 59px;
 }
 
+.description__img {
+  width: 660px;
+  margin-left: -35px;
+}
+
 .discription__contant {
   margin-top: 28px;
   margin-left: 97px;
   width: 438px;
+}
+
+.discription__heading-tablet {
+  display: none;
 }
 
 .discription__heading {
@@ -328,6 +337,7 @@ header {
 }
 
 .step__img {
+  width: auto;
   padding-bottom: 41px;
 }
 
@@ -541,25 +551,51 @@ header {
   margin-right: 0px;
 }
 
-.advantages__img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
+.advantages__imgs {
   height: 160px;
-  border-radius: 50%;
   margin-bottom: 34px;
 }
 
-.advantages__img > img {
-  position: absolute;
+.advantages__img1 {
+  background-image: url(../img/p1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__img2 {
+  background-image: url(../img/p2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__img3 {
+  background-image: url(../img/p3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__img4 {
+  background-image: url(../img/p4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__img5 {
+  background-image: url(../img/p5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__img6 {
+  background-image: url(../img/p6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .advantages__text {
@@ -598,29 +634,30 @@ header {
   margin-right: 0px;
 }
 
-.warranty__img {
-  position: relative;
-  margin-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #F7F7F7;
+.warranty__imgs {
   height: 160px;
-  width: 160px;
-  border-radius: 50%;
 }
 
-.warranty__img > img {
-  position: absolute;
+.warranty__img1 {
+  background-image: url(../img/g1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.warranty__img2 {
+  background-image: url(../img/g2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.warranty__img3 {
+  background-image: url(../img/g3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .warranty__title {
+  margin-top: 32px;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
@@ -772,7 +809,6 @@ footer {
 }
 
 .footer__form-btn {
-  height: 50px;
   width: 362px;
 }
 
@@ -843,12 +879,12 @@ footer {
   margin-right: 350px;
 }
 
-.footer__icons > img:not(:last-child) {
+.footer__icons > a:not(:last-child) {
   margin-right: 29px;
 }
 
 /* mobile hor 425px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 700px;
   }
@@ -858,6 +894,10 @@ footer {
   }
   .header {
     padding-bottom: 60px;
+  }
+  .heading {
+    font-size: 26px;
+    line-height: 31px;
   }
   .logo {
     width: 100px;
@@ -879,6 +919,263 @@ footer {
   .offer__text {
     font-size: 28px;
     line-height: 34px;
+  }
+  .description__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 25px;
+    padding-bottom: 61px;
+    position: relative;
+  }
+  .discription__heading {
+    display: none;
+  }
+  .discription__heading-tablet {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+  .discription__contant {
+    margin-top: 56px;
+    margin-left: 0px;
+    margin-right: 22px;
+    width: 280px;
+  }
+  .description__img {
+    width: 398px;
+    margin-left: 0px;
+    margin-top: 45px;
+  }
+  .discription__text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 31px;
+  }
+  .step__items {
+    padding-top: 38px;
+    padding-bottom: 56px;
+    grid-gap: 36px 80px;
+  }
+  .step__item {
+    height: 317px;
+  }
+  .step__img {
+    width: 280px;
+    padding-bottom: 25px;
+  }
+  .step__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .step__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .step-care {
+    padding: 30px 0px;
+  }
+  .step-care__title {
+    font-size: 28px;
+    line-height: 34px;
+    width: 380px;
+  }
+  .call__content {
+    padding: 32px 0px;
+  }
+  .call__left {
+    width: 300px;
+  }
+  .call__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .call__text {
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .call__form {
+    width: 289px;
+  }
+  .call__input {
+    border-radius: 30px;
+    padding: 18px 17px;
+  }
+  .review {
+    padding: 51px 0px;
+  }
+  .review__slider {
+    margin-top: 31px;
+  }
+  .review__item {
+    width: 280px;
+    margin-right: 20px;
+  }
+  .review__content {
+    margin-bottom: 10px;
+  }
+  .review__photo {
+    width: 100px;
+    height: 100px;
+  }
+  .review-about {
+    margin-left: 18px;
+  }
+  .review-about__name {
+    padding-bottom: 6px;
+  }
+  .review-about__company {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 4px;
+  }
+  .review__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .review-about__text {
+    padding-bottom: 4px;
+  }
+  .slider__arrows {
+    width: 17px;
+  }
+  .advantages {
+    padding: 37px 0px;
+  }
+  .advantages__item {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .advantages__imgs {
+    height: 100px;
+    margin-bottom: 16px;
+  }
+  .advantages__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .warranty {
+    padding: 42px;
+  }
+  .warranty__items {
+    padding-top: 17px;
+  }
+  .warranty__item {
+    height: 305px;
+    width: 220px;
+    margin-right: 15px;
+  }
+  .warranty__imgs {
+    height: 100px;
+  }
+  .warranty__title {
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+  .warranty__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .warranty__btn {
+    width: 220px;
+  }
+  .faq__body {
+    padding-top: 41px;
+    padding-bottom: 39px;
+  }
+  .faq__items {
+    margin-top: 29px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 9px;
+  }
+  .faq__item {
+    padding-bottom: 0px;
+  }
+  .faq__text {
+    width: inherit;
+  }
+  .faq__icon {
+    margin-left: 60px;
+  }
+  .faq__drop {
+    border-radius: 200px 200px 200px 200px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 48px;
+  }
+  .partners {
+    padding-top: 22px;
+    padding-bottom: 38px;
+  }
+  .partners__items > a:not(:last-child) {
+    margin-right: 10px;
+  }
+  .partners__items > a > img {
+    width: 66px;
+  }
+  footer {
+    padding-top: 33px;
+    padding-bottom: 14px;
+  }
+  .footer__line {
+    width: 700px;
+  }
+  .footer__heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer__logo {
+    width: 100px;
+  }
+  .footer__link {
+    margin-right: 32px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .footer__form {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__form-input {
+    width: 220px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 18px 18px;
+    margin-right: 20px;
+    margin-bottom: 7px;
+  }
+  .footer__form-btn {
+    height: 48px;
+    padding: 16px 0px;
+    width: 220px;
+  }
+  .footer__copy {
+    padding-top: 15px;
+  }
+  .footer__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .year {
+    margin-left: 15px;
+  }
+  .footer__icons {
+    margin-left: 75px;
+    margin-right: 190px;
+  }
+  .footer__icons > a:not(:last-child) {
+    margin-right: 16px;
+  }
+  .footer__icons > a > img {
+    width: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
