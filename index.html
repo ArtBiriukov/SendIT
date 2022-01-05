@@ -10,38 +10,61 @@
 </head>
 
 <body>
-  <header>
-    <div class="header container">
-      <div class="nav">
-        <a href="#" class="logo"><img class="logo" src="img/logo.svg" alt="Logo"></a>
-        <nav class="navbar">
-          <a class="navbar__link" href="#">Главная</a>
-          <a class="navbar__link" href="#">Описание</a>
-          <a class="navbar__link" href="#">Преимущества</a>
-          <a class="navbar__link" href="#">Отзывы</a>
-          <a class="navbar__link" href="#">Партнёры</a>
-          <a class="navbar__link" href="#">Гарантии</a>
-          <a class="navbar__link" href="#">FAQ</a>
-        </nav>
-        <div class="burge-menu">
-          <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H40V4H0V0Z" fill="white" />
-            <path d="M0 12H40V16H0V12Z" fill="white" />
-            <path d="M0 25H40V29H0V25Z" fill="white" />
-          </svg>
+  <header id="header">
 
+    <div class="header container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="#" class="logo__link">
+            <img class="logo" src="img/logo.svg" alt="Logo" title="Главная">
+          </a>
         </div>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#header">Главная</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#description">Описание</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#advantages">Преимущества</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#review">Отзывы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#partners">Партнёры</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#warranty">Гарантии</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#faq">FAQ</a></li>
+          </ul>
+
+          <nav class="header__nav-mobile">
+            <div class="header__nav-burger">
+              <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H40V4H0V0Z" fill="white" />
+                <path d="M0 12H40V16H0V12Z" fill="white" />
+                <path d="M0 25H40V29H0V25Z" fill="white" />
+              </svg>
+            </div>
+
+            <ul class="header__nav-mobile-list">
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#header">Главная</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#description">Описание</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#advantages">Преимущества</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#review">Отзывы</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#partners">Партнёры</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#warranty">Гарантии</a></li>
+              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#faq">FAQ</a></li>
+            </ul>
+
+          </nav>
+
+        </nav>
+
       </div>
-      <div class="offer">
-        <h1 class="offer__title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
-        <p class="offer__text">А посылка доедет сама</p>
+
+      <div class="header__offer">
+        <h1 class="header__offer-heading heading">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
+        <p class="header__offer-title title">А посылка доедет сама</p>
         <a href="#" class="btn btn__send">отправить посылку</a>
       </div>
     </div>
   </header>
 
-
-  <section class="offer_mobile container">
+  <section class="header__offer_mobile container">
     <div class="offer_mobile__contant">
       <h1 class="offer_mobile__title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
       <p class="offer_mobile__text">А посылка доедет сама</p>
@@ -49,7 +72,7 @@
     </div>
   </section>
 
-  <section class="description">
+  <section class="description" id="description">
     <div class="description__item container">
       <h2 class="discription__heading-tablet heading">
         Мы – агрегатор служб доставки
@@ -72,7 +95,7 @@
     </div>
   </section>
 
-  <section class="step container">
+  <section class="step container" id="step">
     <div class="step__items">
       <div class="step__item"><img src="img/Asset 3@4x.png" alt="step 1" class="step__img">
         <h3 class="step__title">Шаг 1</h3>
@@ -94,14 +117,14 @@
     </div>
   </section>
 
-  <section class="step-care">
+  <section class="step-care" id="step-care">
     <div class="step-care__body container">
       <h2 class="step-care__title">Мы берём все заботы по доставке на себя!</h2>
       <a href="#" class="btn btn__send">отправить посылку</a>
     </div>
   </section>
 
-  <section class="call">
+  <section class="call" id="call">
     <div class="call__content container">
       <div class="call__left">
         <h2 class="call__title">хотите мы вам перезвоним?</h2>
@@ -109,8 +132,8 @@
       </div>
       <div class="call__right">
         <form class="call__form" action="#">
-          <input class="call__input" type="tel" name="phone" id="phone" value="Ваш телефон">
-          <button class="call__btn btn__send" type="submit">заказать звонок</button>
+          <input class="call__input" type="tel" name="phone" placeholder="Ваш телефон">
+          <button class="call__btn" type="submit">заказать звонок</button>
           <div class="notific__call">
             <input class="checkbox" type="checkbox" name="agrea" id="agrea">
             <label for="agrea">
@@ -122,7 +145,7 @@
     </div>
   </section>
 
-  <section class="review container">
+  <section class="review container" id="review">
     <h2 class="heading">отзывы</h2>
     <div class="review__slider">
       <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -175,7 +198,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="advantages__body container">
       <h2 class="heading">НАШИ ПРЕИМУЩЕСТВА</h2>
       <div class="advantages__items">
@@ -214,7 +237,7 @@
     </div>
   </section>
 
-  <section class="warranty">
+  <section class="warranty" id="warranty">
     <div class="warranty__body container">
       <h2 class="heading">Наши гарантии</h2>
       <div class="warranty__items">
@@ -261,7 +284,7 @@
     </div>
   </section>
 
-  <section class="faq">
+  <section class="faq" id="faq">
     <div class="faq__body container">
       <h2 class="heading">остались сомнения?</h2>
       <div class="faq__items">
@@ -373,7 +396,7 @@
     </div>
   </section>
 
-  <div class="partners container">
+  <div class="partners container" id="partners">
     <div class="partners__slider">
 
       <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -401,13 +424,13 @@
 
   </div>
 
-  <footer>
+  <footer id="footer">
     <div class="footer container">
       <div class="footer__form">
         <h2 class="footer__heading heading">остались вопросы?</h2>
         <form action="#">
-          <input class="footer__form-input" type="text" name="tel" id="footer-tel" value="Ваш телефон">
-          <button class="btn footer__form-btn btn__send" type="submit">заказать звонок</button>
+          <input class="footer__form-input" type="text" name="tel" placeholder="Ваш телефон">
+          <button class="btn footer__form-btn" type="submit">заказать звонок</button>
           <div class="notific__footer">
             <input class="checkbox" type="checkbox" name="agrea" id="agrea__footer">
             <label for="agrea__footer">
@@ -423,13 +446,13 @@
       <div class="footer__menu">
         <a href="#"><img src="img/footer_logo.png" alt="logo" class="footer__logo"></a>
         <nav class="footer__navbar">
-          <a href="#" class="footer__link">Главная</a>
-          <a href="#" class="footer__link">Описание</a>
-          <a href="#" class="footer__link">Преимущества</a>
-          <a href="#" class="footer__link">Отзывы</a>
-          <a href="#" class="footer__link">Партнёры</a>
-          <a href="#" class="footer__link">Гарантии</a>
-          <a href="#" class="footer__link">FAQ</a>
+          <a href="#header" class="footer__link">Главная</a>
+          <a href="#description" class="footer__link">Описание</a>
+          <a href="#advantages" class="footer__link">Преимущества</a>
+          <a href="#review" class="footer__link">Отзывы</a>
+          <a href="#partners" class="footer__link">Партнёры</a>
+          <a href="#warranty" class="footer__link">Гарантии</a>
+          <a href="#faq" class="footer__link"></a>
         </nav>
 
         <div class="footer__burger-menu">
@@ -438,7 +461,6 @@
             <path d="M0 14H40V19H0V14Z" fill="#363636" />
             <path d="M0 28H40V33H0V28Z" fill="#363636" />
           </svg>
-
         </div>
       </div>
 
@@ -446,9 +468,9 @@
       <div class="footer__copy">
         <p class="footer__text">© Сами копипастим и вам разрешаем <span class="year">2021</span></p>
         <div class="footer__icons">
-          <a href="vk.com"><img src="img/Forma11.png" alt="vk"></a>
-          <a href="instagram.com"><img src="img/Forma12.png" alt="instagram"></a>
-          <a href="facebook"><img src="img/Forma13.png" alt="facebook"></a>
+          <a href="vk.com"><img src="img/Forma11.png" alt="vk" title="Вконтакте"></a>
+          <a href="instagram.com"><img src="img/Forma12.png" alt="instagram" title="Инстаграм"></a>
+          <a href="facebook"><img src="img/Forma13.png" alt="facebook" title="FaceBook"></a>
         </div>
         <p class="footer__text">Сверстано Biryukov Art</p>
       </div>
@@ -457,26 +479,26 @@
 
   </footer>
 
-  <div class="modal__body" id="modal-type">
-    <div class="overlay" id="overlay"></div>
-    <div class="modal">
-      <div class="modal__icon" id="modal-close">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12.3502 1.74379C12.5455 1.54853 12.5455 1.23195 12.3502 1.03669C12.155 0.841425 11.8384 0.841425 11.6431 1.03669L12.3502 1.74379ZM1.03653 11.6433C0.841269 11.8386 0.841268 12.1551 1.03653 12.3504C1.23179 12.5457 1.54838 12.5457 1.74364 12.3504L1.03653 11.6433ZM11.5562 12.2635C11.7515 12.4587 12.068 12.4587 12.2633 12.2635C12.4586 12.0682 12.4586 11.7516 12.2633 11.5563L11.5562 12.2635ZM1.6567 0.949748C1.46144 0.754486 1.14485 0.754486 0.94959 0.949748C0.754328 1.14501 0.754328 1.46159 0.94959 1.65685L1.6567 0.949748ZM11.6431 1.03669L6.33983 6.33999L7.04694 7.04709L12.3502 1.74379L11.6431 1.03669ZM6.33983 6.33999L1.03653 11.6433L1.74364 12.3504L7.04694 7.04709L6.33983 6.33999ZM6.33983 7.0471L11.5562 12.2635L12.2633 11.5563L7.04694 6.33999L6.33983 7.0471ZM7.04694 6.33999L1.6567 0.949748L0.94959 1.65685L6.33983 7.0471L7.04694 6.33999Z"
-            fill="#008DCD" />
-        </svg>
-      </div>
-      <h2 class=" modal__heading">Оставьте заявку, и мы Вам перезвоним!</h2>
-      <form action="#" class="modal__form">
-        <input class="modal__input" type="text" name="name" id="name" value="Ваше имя" required>
-        <input class="modal__input" type="tel" name="tel" id="tel" value="Ваш телефон" required>
-        <button class="btn" type="submit">Заказать звонок</button>
-      </form>
+  <!-- modal window -->
+  <div class="overlay"></div>
+
+  <div class="modal">
+    <div class="modal__close">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.3502 1.74379C12.5455 1.54853 12.5455 1.23195 12.3502 1.03669C12.155 0.841425 11.8384 0.841425 11.6431 1.03669L12.3502 1.74379ZM1.03653 11.6433C0.841269 11.8386 0.841268 12.1551 1.03653 12.3504C1.23179 12.5457 1.54838 12.5457 1.74364 12.3504L1.03653 11.6433ZM11.5562 12.2635C11.7515 12.4587 12.068 12.4587 12.2633 12.2635C12.4586 12.0682 12.4586 11.7516 12.2633 11.5563L11.5562 12.2635ZM1.6567 0.949748C1.46144 0.754486 1.14485 0.754486 0.94959 0.949748C0.754328 1.14501 0.754328 1.46159 0.94959 1.65685L1.6567 0.949748ZM11.6431 1.03669L6.33983 6.33999L7.04694 7.04709L12.3502 1.74379L11.6431 1.03669ZM6.33983 6.33999L1.03653 11.6433L1.74364 12.3504L7.04694 7.04709L6.33983 6.33999ZM6.33983 7.0471L11.5562 12.2635L12.2633 11.5563L7.04694 6.33999L6.33983 7.0471ZM7.04694 6.33999L1.6567 0.949748L0.94959 1.65685L6.33983 7.0471L7.04694 6.33999Z"
+          fill="#008DCD" />
+      </svg>
     </div>
+    <h2 class=" modal__heading">Оставьте заявку, и мы Вам перезвоним!</h2>
+    <form action="#" class="modal__form">
+      <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+      <input class="modal__input" type="tel" name="tel" placeholder="Ваш телефон">
+      <button class="btn modal__btn" type="submit">Заказать звонок</button>
+    </form>
   </div>
 
-  <script src="main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 
 </body>
 

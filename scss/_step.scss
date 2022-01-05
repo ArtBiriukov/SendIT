@@ -1,0 +1,47 @@
+.step__items {
+  padding-top: 69px;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 36px 140px;
+  justify-content: center;
+}
+
+.step__item {
+  height: 484px;
+}
+
+.step__img {
+  width: auto;
+  padding-bottom: 41px;
+}
+
+.step__title {
+  padding-bottom: 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.step__texr {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.step-care {
+  padding: 64px 0px;
+  background-color: #F7F7F7;
+}
+
+.step-care__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-care__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+}

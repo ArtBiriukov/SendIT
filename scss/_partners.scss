@@ -1,0 +1,14 @@
+.partners {
+  padding-top: 59px;
+  padding-bottom: 50px;
+}
+
+.partners__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__items>a:not(:last-child) {
+  margin-right: 33px;
+}
