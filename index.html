@@ -157,57 +157,97 @@
   </section>
 
   <section class="review container" id="review">
-    <h2 class="heading">отзывы</h2>
-    <div class="review__slider">
-      <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-      <div class="review__items">
-        <div class="review__item">
+    <h2 class="review__title title">отзывы</h2>
+
+    <div class="review__slider slider">
+
+      <div class="review__button-prev">
+        <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <div class="review__wrapper slider__wrapper">
+
+        <div class="review__slide slider__slide">
+
           <div class="review__content">
-            <img src="img/img1.jpg" alt="Photo" class="review__photo">
-            <div class="review-about">
-              <h3 class="review-about__name heading">Дарья</h3>
-              <p class="review-about__company">La Intuicion</p>
-              <p class="review-about__text review__text">Посылка: <span class="review__text">товары</span></p>
-              <p class="review-about__text review__text">Откуда: <span class="review__text">Москва</span></p>
-              <p class="review-about__text review__text">Куда: <span class="review__text">Нижневартовск</span></p>
+
+            <img class="review__content-photo" src="img/img1.jpg" alt="Photo">
+
+            <div class="review__about">
+
+              <h3 class="review__about_name title">Дарья</h3>
+              <p class="review__about_company">La Intuicion</p>
+
+              <p class="review__about_text text">Посылка: 
+                <span class="review__text">товары</span>
+              </p>
+
+              <p class="review__about_text text">Откуда: 
+                <span class="review__text">Москва</span>
+              </p>
+
+              <p class="text">Куда: 
+                <span class="text">Нижневартовск</span>
+              </p>
             </div>
           </div>
-          <div class="review__text">Отличный и качественный сервис.
+
+          <article class="text">Отличный и качественный сервис.
             Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что
             помимо
             удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
             (ведение
-            адресной базы, выбор и вызов курьера в пару кликов).</div>
+            адресной базы, выбор и вызов курьера в пару кликов).</article>
+
         </div>
-        <div class="review__item">
+
+        <div class="review__slide slider__slide">
+
           <div class="review__content">
-            <img src="img/img2.jpg" alt="Photo" class="review__photo">
-            <div class="review-about">
-              <h3 class="review-about__name heading">Елена</h3>
-              <p class="review-about__company">Global Logic</p>
-              <p class="review-about__text review__text">Посылка: <span class="review__text">товары</span></p>
-              <p class="review-about__text review__text">Откуда: <span class="review__text">Москва</span></p>
-              <p class="review-about__text review__text">Куда: <span class="review__text">Калининград</span></p>
+
+            <img class="review__content-photo" src="img/img2.jpg" alt="Photo">
+
+            <div class="review__about">
+
+              <h3 class="review__about_name title">Елена</h3>
+              <p class="review__about_company">Global Logic</p>
+
+              <p class="review__about_text text">Посылка: 
+                <span class="review__text">товары</span>
+              </p>
+
+              <p class="review__about_text text">Откуда: 
+                <span class="review__text">Москва</span>
+              </p>
+
+              <p class="text">Куда: 
+                <span class="text">Калининград</span>
+              </p>
             </div>
           </div>
-          <div class="review__text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
-            доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё
-            это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
-            отзывчивость.</div>
+
+          <article class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.</article>
+
         </div>
+
       </div>
 
-      <svg class="slider__arrows" width="32" height="32" viewBox="0 0 32 32" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
+      <div class="review__button-next">
+        <svg class="slider__arrows" width="32" height="32" viewBox="0 0 32 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
     </div>
   </section>
+
+
 
   <section class="advantages" id="advantages">
     <div class="advantages__body container">
