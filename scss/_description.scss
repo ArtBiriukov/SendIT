@@ -1,34 +1,26 @@
 .description {
   background-color: #F7F7F7;
-  position: relative;
+
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 59px;
+  }
+
+  &__content {
+    margin-top: 30px;
+    padding-right: 60px;
+  }
+
+  &__title {
+    padding-bottom: 34px;
+  }
+
+  &__text {
+    padding-bottom: 36px;
+  }
+
 }
 
-.description__item {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 62px;
-  padding-bottom: 59px;
-}
 
-.description__img {
-  width: 660px;
-  margin-left: -35px;
-}
-
-.discription__contant {
-  margin-top: 28px;
-  margin-left: 97px;
-  width: 438px;
-}
-
-.discription__heading-tablet {
-  display: none;
-}
-
-.discription__heading {
-  padding-bottom: 34px;
-}
-
-.discription__text {
-  padding-bottom: 36px;
-}

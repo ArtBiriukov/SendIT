@@ -19,6 +19,37 @@ a {
   margin: auto;
 }
 
+/*TEXT*/
+.heading {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+/*SLIDER COMTROLL*/
+.slider__arrows {
+  cursor: pointer;
+
+  &:hover path {
+    transition: all .5s ease;
+    stroke: #008DCD;
+  }
+}
+
 
 /* BUTTON */
 .btn {
@@ -40,38 +71,6 @@ a {
     box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45);
   }
 }
-
-/*TEXT*/
-.heading {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-  text-transform: uppercase;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 19px;
-}
-
-
-/*SLIDER COMTROLL*/
-.slider__arrows {
-  cursor: pointer;
-
-  &:hover path {
-    transition: all .5s ease;
-    stroke: #008DCD;
-  }
-}
-
-
 
 .notific__call {
   color: $color__white;
