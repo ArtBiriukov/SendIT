@@ -1,74 +1,54 @@
 .call {
   background-color: $color__blue;
-}
-
-.call__content {
-  display: flex;
-  justify-content: space-between;
   padding-top: 73px;
   padding-bottom: 39px;
-}
 
-.call__title {
-  color: $color__white;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  text-transform: uppercase;
-  padding-bottom: 28px;
-}
-
-.call__text {
-  color: $color__white;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 23px;
-}
-
-.call__form {
-  display: flex;
-  flex-direction: column;
-  width: 360px;
-}
-
-.call__input {
-  background-color: $color__blue;
-  border: 1px solid #FFFFFF;
-
-  border-radius: 30px;
-  padding: 18px 21px;
-
-  outline: none;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: $color__white;
-
-  margin-bottom: 9px;
-}
-
-.call__input::placeholder {
-  color: white;
-}
-
-.call__btn {
-  background-color: $color__orange;
-  border: 1px solid $color__orange;
-  border-radius: 30px;
-  padding: 16px 0px;
-  margin-bottom: 14px;
-
-  cursor: pointer;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: $color__dark;
-
-  &:hover {
-    box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: $color__white;
   }
+
+  &__heading {
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+  }
+
+  &__input {
+    background-color: $color__blue;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 18px 21px;
+    outline: none;
+    margin-bottom: 9px;
+  }
+
+  &__input::placeholder {
+    color: $color__white;
+  }
+
+  &__btn {
+    color: $color__dark;
+    background-color: $color__orange;
+    border: 1px solid $color__orange;
+    margin-bottom: 14px;
+    font-weight: 700;
+
+    &:hover {
+      box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+    }
+  }
+
 }
+
