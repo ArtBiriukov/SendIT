@@ -12,9 +12,7 @@ header {
   color: $color__white;
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include displayFlex;
   }
 
   &__nav-list {

@@ -15,8 +15,10 @@ a {
 }
 
 .container {
-  width: 1160px;
-  margin: auto;
+  padding-left: calc(50% - 580px);
+  padding-right: calc(50% - 580px);
+  // width: 1160px;
+  // margin: auto;
 }
 
 /*TEXT*/

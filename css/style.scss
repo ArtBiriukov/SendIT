@@ -1,4 +1,5 @@
 @import "../scss/var";
+@import "../scss/mixins";
 @import "../scss/fonts";
 
 @import "../scss/globals";
@@ -7,6 +8,7 @@
 
 @import "../scss/header";
 @import "../scss/description";
+@import "../scss/step";
 @import "../scss/call";
 @import "../scss/review";
 @import "../scss/advantages";
