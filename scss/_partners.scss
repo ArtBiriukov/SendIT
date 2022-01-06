@@ -3,18 +3,14 @@
   padding-bottom: 50px;
 
   &__slider {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include displayFlex;
   }
 
   &__wrapper {
+    min-width: 980px;
     display: flex;
+    justify-content: space-between;
   }
 
-  &__slide {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
 }
 

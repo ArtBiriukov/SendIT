@@ -14,35 +14,6 @@ header {
   &__top {
     @include displayFlex;
   }
-
-  &__nav-list {
-    display: flex;
-    list-style: none;
-  }
-
-  &__nav-item {
-    margin-left: 60px;
-
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
-
-  &__nav-link {
-    font-size: 18px;
-    line-height: 22px;
-    color: $color__white;
-    transition: all 0.3s ease-out;
-  
-    &:hover {
-      text-shadow: 0 0 2.5px #FFFFFF, 0 0 2.5px #FFFFFF;
-    }
-  }
-
-  &__nav-mobile {
-    display: none;
-  }
-
 }
 
 .header__offer {

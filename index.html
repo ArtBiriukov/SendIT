@@ -20,18 +20,22 @@
           </a>
         </div>
 
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="#header">Главная</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#description">Описание</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#advantages">Преимущества</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#review">Отзывы</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#partners">Партнёры</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#warranty">Гарантии</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#faq">FAQ</a></li>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#header">Главная</a></li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link"
+                href="#description">Описание</a></li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link"
+                href="#advantages">Преимущества</a></li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#review">Отзывы</a></li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#partners">Партнёры</a>
+            </li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#warranty">Гарантии</a>
+            </li>
+            <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#faq">FAQ</a></li>
           </ul>
 
-          <nav class="header__nav-mobile">
+          <nav class="nav__mobile">
             <div class="header__nav-burger">
               <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0H40V4H0V0Z" fill="white" />
@@ -99,26 +103,26 @@
 
     <div class="step__item-content">
       <img class="step__img" src="img/Asset 3@4x.png" alt="step 1">
-      <h3 class="step__title">Шаг 1</h3>
+      <h3 class="step__title title-little">Шаг 1</h3>
       <p class="step__text">Придумайте что и кому отправить</p>
     </div>
 
     <div class="step__item-content">
       <img class="step__img" src="img/Asset 4@4x 2.png" alt="step 2">
-      <h3 class="step__title">Шаг 2</h3>
+      <h3 class="step__title title-little">Шаг 2</h3>
       <p class="step__text">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос,
         уточнит все необходимые данные</p>
     </div>
 
     <div class="step__item-content">
       <img class="step__img" src="img/Asset 5@4x.png" alt="step 3">
-      <h3 class="step__title">Шаг 3</h3>
+      <h3 class="step__title title-little">Шаг 3</h3>
       <p class="step__text">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
     </div>
 
     <div class="step__item-content">
       <img class="step__img" src="img/Asset 6@4x.png" alt="step 4">
-      <h3 class="step__title">Шаг 4</h3>
+      <h3 class="step__title title-little">Шаг 4</h3>
       <p class="step__text">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
     </div>
 
@@ -435,7 +439,7 @@
   <section class="partners container" id="partners">
 
     <div class="partners__slider">
-      
+
       <div class="review__button-prev">
         <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -471,57 +475,110 @@
 
   </section>
 
-  <footer id="footer">
-    <div class="footer container">
-      <div class="footer__form">
-        <h2 class="footer__heading heading">остались вопросы?</h2>
-        <form action="#">
-          <input class="footer__form-input" type="text" name="tel" placeholder="Ваш телефон">
-          <button class="btn footer__form-btn" type="submit">заказать звонок</button>
-          <div class="notific__footer">
-            <input class="checkbox" type="checkbox" name="agrea" id="agrea__footer">
-            <label for="agrea__footer">
-              <span class="footer__form-text notific-text">Я согласен на обработку персональных
-                данных</span>
-            </label>
+  <footer class="footer container" id="footer">
+
+    <div class="footer__top">
+
+      <h2 class="footer__title title-little">остались вопросы?</h2>
+
+      <form class="footer__form" action="#">
+        <input class="footer__form-input text" type="text" name="tel" placeholder="Ваш телефон">
+        <button class="footer__form-btn btn text" type="submit">заказать звонок</button>
+
+        <div class="footer__form-notific">
+          <input class="checkbox" type="checkbox" name="agrea" id="agree__footer">
+          <label for="agree__footer">
+            <span class="footer__form-text notific-text">Я согласен на обработку персональных
+              данных</span>
+          </label>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="footer__menu">
+
+      <div class="footer__logo">
+        <a href="#" class="logo__link">
+          <img class="logo" src="img/footer_logo.png" alt="Logo" title="Главная">
+        </a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#header">Главная</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#description">Описание</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#advantages">Преимущества</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#review">Отзывы</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#partners">Партнёры</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#warranty">Гарантии</a>
+          </li>
+          <li class="nav__item footer__nav-item">
+            <a class="nav__link footer__nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+
+        <nav class="nav__mobile">
+          <div class="header__nav-burger">
+            <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H40V4H0V0Z" fill="white" />
+              <path d="M0 12H40V16H0V12Z" fill="white" />
+              <path d="M0 25H40V29H0V25Z" fill="white" />
+            </svg>
           </div>
 
-        </form>
-      </div>
-      <div class="footer__line"></div>
+          <ul class="header__nav-mobile-list">
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#header">Главная</a></li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#description">Описание</a>
+            </li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#review">Отзывы</a></li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#partners">Партнёры</a></li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#warranty">Гарантии</a></li>
+            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#faq">FAQ</a></li>
+          </ul>
 
-      <div class="footer__menu">
-        <a href="#"><img src="img/footer_logo.png" alt="logo" class="footer__logo"></a>
-        <nav class="footer__navbar">
-          <a href="#header" class="footer__link">Главная</a>
-          <a href="#description" class="footer__link">Описание</a>
-          <a href="#advantages" class="footer__link">Преимущества</a>
-          <a href="#review" class="footer__link">Отзывы</a>
-          <a href="#partners" class="footer__link">Партнёры</a>
-          <a href="#warranty" class="footer__link">Гарантии</a>
-          <a href="#faq" class="footer__link"></a>
         </nav>
 
-        <div class="footer__burger-menu">
-          <svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H40V5H0V0Z" fill="#363636" />
-            <path d="M0 14H40V19H0V14Z" fill="#363636" />
-            <path d="M0 28H40V33H0V28Z" fill="#363636" />
-          </svg>
-        </div>
-      </div>
+      </nav>
 
-      <div class="footer__line"></div>
-      <div class="footer__copy">
-        <p class="footer__text">© Сами копипастим и вам разрешаем <span class="year">2021</span></p>
-        <div class="footer__icons">
-          <a href="vk.com"><img src="img/Forma11.png" alt="vk" title="Вконтакте"></a>
-          <a href="instagram.com"><img src="img/Forma12.png" alt="instagram" title="Инстаграм"></a>
-          <a href="facebook"><img src="img/Forma13.png" alt="facebook" title="FaceBook"></a>
-        </div>
-        <p class="footer__text">Сверстано Biryukov Art</p>
-      </div>
+    </div>
 
+    <div class="footer__bottom">
+      <p class="footer__bottom-copy">© Сами копипастим и вам разрешаем <span class="year">2021</span></p>
+    
+      <ul class="footer__bottom-icons">
+        <li class="footer__bottom-icon">
+          <a href="vk.com" alt="vk.com">
+            <img src="img/Forma11.png" alt="vk" title="Вконтакте">
+          </a>
+        </li>
+        <li class="footer__bottom-icon">
+          <a href="instagram.com" alt="instagram.com">
+            <img src="img/Forma12.png" alt="instagram" title="Инстаграм">
+          </a>
+        </li>
+        <li class="footer__bottom-icon">
+          <a href="facebook.com" alt="facebook.com">
+            <img src="img/Forma13.png" alt="facebook" title="FaceBook">
+          </a>
+        </li>
+      </ul>
+
+
+      <p class="footer__bottom-info">Сверстано<a href="#" class="footer__bottom-link"> Biryukov Art</a></p>
     </div>
 
   </footer>

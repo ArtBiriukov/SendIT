@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -33,6 +34,12 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
+}
+
+.title-little {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .text {
