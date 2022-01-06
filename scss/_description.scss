@@ -1,11 +1,11 @@
 .description {
   background-color: #F7F7F7;
+  padding-top: 62px;
+  padding-bottom: 59px;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 62px;
-    padding-bottom: 59px;
   }
 
   &__content {
@@ -15,7 +15,12 @@
 
   &__title {
     padding-bottom: 34px;
+    display: block;
+    &-tablet{
+      display: none;
+    }
   }
+  
 
   &__text {
     padding-bottom: 36px;

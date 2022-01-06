@@ -22,8 +22,6 @@ button {
 .container {
   padding-left: calc(50% - 580px);
   padding-right: calc(50% - 580px);
-  // width: 1160px;
-  // margin: auto;
 }
 
 /*TEXT*/
@@ -126,9 +124,6 @@ button {
 .checkbox:checked+label:after {
   opacity: 1;
 }
-
-
-
 
 /*SLIDER COMTROLL*/
 .slider__arrows {

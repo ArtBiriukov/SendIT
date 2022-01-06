@@ -7,27 +7,28 @@ header {
 
 /* header */
 .header {
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 155px;
   color: $color__white;
 
   &__top {
     @include displayFlex;
   }
-}
 
-.header__offer {
-  padding-top: 88px;
-
-  &-heading {
-    padding-bottom: 44px;
-  }
-
-  &-title {
-    padding-bottom: 52px;
-  }
-
-  &_mobile {
-    display: none;
+  &__offer {
+    padding-top: 80px;
+    max-width: 710px;
+  
+    &-heading {
+      padding-bottom: 40px;
+    }
+  
+    &-title {
+      padding-bottom: 45px;
+    }
+  
+    &_mobile {
+      display: none;
+    }
   }
 }
