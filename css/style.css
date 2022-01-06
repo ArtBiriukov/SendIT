@@ -491,15 +491,18 @@ header {
   padding-bottom: 64px;
 }
 
-.warranty__items {
+.warranty__title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.warranty__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 27px;
-}
-
-.warranty__slider {
-  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .warranty__item {
@@ -515,56 +518,26 @@ header {
           justify-content: space-between;
   height: 400px;
   width: 360px;
-  margin-right: 40px;
 }
 
-.warranty__item:last-child {
-  margin-right: 0px;
+.warranty__item-img {
+  margin-bottom: 25px;
 }
 
-.warranty__imgs {
-  height: 160px;
-}
-
-.warranty__img1 {
-  background-image: url(../img/g1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.warranty__img2 {
-  background-image: url(../img/g2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.warranty__img3 {
-  background-image: url(../img/g3.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.warranty__title {
-  margin-top: 32px;
+.warranty__item-title {
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.warranty__text {
-  font-size: 16px;
-  line-height: 19px;
+.warranty__item-btn {
+  display: block;
+  text-align: center;
 }
 
-.warranty__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.warranty__slider {
+  display: none;
 }
 
 .faq {
