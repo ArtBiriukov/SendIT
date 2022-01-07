@@ -34,29 +34,26 @@
             </li>
             <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#faq">FAQ</a></li>
           </ul>
+        </nav>
 
-          <nav class="nav__mobile">
-            <div class="header__nav-burger">
-              <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H40V4H0V0Z" fill="white" />
-                <path d="M0 12H40V16H0V12Z" fill="white" />
-                <path d="M0 25H40V29H0V25Z" fill="white" />
-              </svg>
-            </div>
+        <nav class="nav__mobile">
+          <div class="nav__mobile-button">
+            <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H40V4H0V0Z" fill="white" />
+              <path d="M0 12H40V16H0V12Z" fill="white" />
+              <path d="M0 25H40V29H0V25Z" fill="white" />
+            </svg>
+          </div>
 
-            <ul class="header__nav-mobile-list">
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#header">Главная</a></li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#description">Описание</a>
-              </li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#advantages">Преимущества</a>
-              </li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#review">Отзывы</a></li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#partners">Партнёры</a></li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#warranty">Гарантии</a></li>
-              <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#faq">FAQ</a></li>
-            </ul>
-
-          </nav>
+          <ul class="nav__mobile-list">
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#header">Главная</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#description">Описание</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#advantages">Преимущества</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#review">Отзывы</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#partners">Партнёры</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#warranty">Гарантии</a></li>
+            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#faq">FAQ</a></li>
+          </ul>
 
         </nav>
 
@@ -70,10 +67,10 @@
     </div>
   </header>
 
-  <section class="header__offer_mobile container">
-    <div class="offer_mobile__contant">
-      <h1 class="offer_mobile__title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
-      <p class="offer_mobile__text">А посылка доедет сама</p>
+  <section class="offer__mobile container">
+    <div class="offer__mobile_wrapper">
+      <h1 class="offer__mobile_title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
+      <p class="offer__mobile_sub-title">А посылка доедет сама</p>
       <a href="#" class="btn btn__send">отправить посылку</a>
     </div>
   </section>
@@ -313,15 +310,16 @@
     <div class="warranty__wrapper">
 
       <div class="warranty__item">
+
         <div class="warranty__item-content">
 
-          <img class="warranty__item-img" src="img/g1.png" alt="insurance">
+          <div class="warranty__item-header">
+            <img class="warranty__item-img" src="img/g1.png" alt="insurance">
+            <h3 class="warranty__item-title">Страховка отправлений</h3>
+          </div>
 
-          <h3 class="warranty__item-title">Страховка отправлений</h3>
-
-          <article class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
-            клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</article>
-
+          <article class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросуклиента Каждый куръер находится под пристальным вниманием менеджеров SendIt
+          </article>
         </div>
         <a href="#" class="warranty__item-btn btn">подробнее</a>
       </div>
@@ -329,9 +327,10 @@
       <div class="warranty__item">
         <div class="warranty__item-content">
 
-          <img class="warranty__item-img" src="img/g2.png" alt="calculation">
-
-          <h3 class="warranty__item-title">Прозрачность расчетов</h3>
+          <div class="warranty__item-header">
+            <img class="warranty__item-img" src="img/g2.png" alt="insurance">
+            <h3 class="warranty__item-title">Прозрачность расчетов</h3>
+          </div>
 
           <article class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться с
             каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
@@ -344,9 +343,10 @@
       <div class="warranty__item">
         <div class="warranty__item-content">
 
-          <img class="warranty__item-img" src="img/g3.png" alt="supplier">
-
-          <h3 class="warranty__item-title">Лучшие поставщики</h3>
+          <div class="warranty__item-header">
+            <img class="warranty__item-img" src="img/g3.png" alt="insurance">
+            <h3 class="warranty__item-title">Лучшие поставщики</h3>
+          </div>
 
           <article class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
             Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</article>
@@ -357,10 +357,75 @@
 
     </div>
 
-    <div class="warranty__slider">
+    <div class="warranty__slider slider">
+
+      <div class="review__button-prev">
+        <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <div class="warranty__slider-wrapper slider__wrapper">
+
+        <div class="warranty__slider-slide slider__slide">
+          <div class="warranty__item-content">
+  
+            <div class="warranty__item-header">
+              <img class="warranty__item-img" src="img/g1.png" alt="insurance">
+              <h3 class="warranty__item-title">Страховка отправлений</h3>
+            </div>
+  
+            <article class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
+              клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</article>
+  
+          </div>
+          <a href="#" class="warranty__item-btn btn">подробнее</a>
+        </div>
+  
+        <div class="warranty__slider-slide slider__slide">
+          <div class="warranty__item-content">
+
+            <div class="warranty__item-header">
+              <img class="warranty__item-img" src="img/g2.png" alt="calculation">
+              <h3 class="warranty__item-title">Прозрачность расчетов</h3>
+            </div>
+    
+            <article class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться с
+              каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
+              сервисом</article>
+  
+          </div>
+          <a href="#" class="warranty__item-btn btn">подробнее</a>
+        </div>
+  
+        <div class="warranty__slider-slide slider__slide">
+          <div class="warranty__item-content">
+
+            <div class="warranty__item-header">
+              <img class="warranty__item-img" src="img/g3.png" alt="supplier">
+              <h3 class="warranty__item-title">Лучшие поставщики</h3>
+            </div>
+  
+            <article class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
+              Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</article>
+  
+          </div>
+          <a href="#" class="warranty__item-btn btn">подробнее</a>
+        </div>
+      </div>
+
+      <div class="review__button-next">
+        <svg class="slider__arrows" width="32" height="32" viewBox="0 0 32 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
 
     </div>
-    </div>
+    
   </section>
 
   <section class="faq container" id="faq">
@@ -441,7 +506,7 @@
 
   <section class="partners container" id="partners">
 
-    <div class="partners__slider">
+    <div class="partners__slider slider">
 
       <div class="review__button-prev">
         <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -451,46 +516,51 @@
         </svg>
       </div>
 
-      <div class="partners__wrapper">
+      <div class="partners__wrapper slider__wrapper">
 
-        <div class="partners__slide">
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/bringo.png" alt="bringo">
           </a>
         </div>
 
-        <div class="partners__slide">
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/cdek.png" alt="cdek">
           </a>
         </div>
 
-        <div class="partners__slide">
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/city_express.png" alt="city_express">
           </a>
         </div>
-        <div class="partners__slide">
+
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/dpd.png" alt="dpd">
           </a>
         </div>
-        <div class="partners__slide">
+
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/pony.png" alt="pony">
           </a>
         </div>
-        <div class="partners__slide">
+
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/spsr.png" alt="spsr">
           </a>
         </div>
-        <div class="partners__slide">
+
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/tnt.png" alt="tnt">
           </a>
         </div>
-        <div class="partners__slide">
+
+        <div class="partners__slide slider__slide">
           <a href="#">
             <img src="img/partners/ups.png" alt="ups">
           </a>
@@ -562,29 +632,26 @@
             <a class="nav__link footer__nav-link" href="#faq">FAQ</a>
           </li>
         </ul>
+      </nav>
 
-        <nav class="nav__mobile">
-          <div class="header__nav-burger">
-            <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0H40V4H0V0Z" fill="white" />
-              <path d="M0 12H40V16H0V12Z" fill="white" />
-              <path d="M0 25H40V29H0V25Z" fill="white" />
-            </svg>
-          </div>
+      <nav class="nav__mobile">
+        <div class="nav__mobile-button">
+          <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H40V4H0V0Z" fill="black" />
+            <path d="M0 12H40V16H0V12Z" fill="black" />
+            <path d="M0 25H40V29H0V25Z" fill="black" />
+          </svg>
+        </div>
 
-          <ul class="header__nav-mobile-list">
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#header">Главная</a></li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#description">Описание</a>
-            </li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#advantages">Преимущества</a>
-            </li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#review">Отзывы</a></li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#partners">Партнёры</a></li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#warranty">Гарантии</a></li>
-            <li class="header__nav-mobile-item"><a class="header__nav-mobile-link" href="#faq">FAQ</a></li>
-          </ul>
-
-        </nav>
+        <ul class="nav__mobile-list">
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#header">Главная</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#description">Описание</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#advantages">Преимущества</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#review">Отзывы</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#partners">Партнёры</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#warranty">Гарантии</a></li>
+          <li class="nav__mobile-item"><a class="nav__mobile-link" href="#faq">FAQ</a></li>
+        </ul>
 
       </nav>
 

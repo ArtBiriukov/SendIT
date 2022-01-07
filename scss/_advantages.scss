@@ -16,9 +16,6 @@
 
   &__item {
     width: 166px;
-    &:not(:first-child) {
-      margin-left: 32px;
-    }
   }
 
   &__img {

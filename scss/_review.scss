@@ -7,14 +7,8 @@
     padding-bottom: 70px;
   }
 
-  &__slider {
-    @include displayFlex;
-  }
-
   &__wrapper {
     width: 960px;
-    @include displayFlex;
-    gap: 40px;
   }
 
   &__slide {

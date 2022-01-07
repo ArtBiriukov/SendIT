@@ -19,6 +19,10 @@
     height: 400px;
     width: 360px;
 
+    &-header {
+      margin-bottom: 15px;
+    }
+
     &-img {
       margin-bottom: 25px;
     }
@@ -27,7 +31,6 @@
       font-weight: 600;
       font-size: 30px;
       line-height: 36px;
-      margin-bottom: 15px;
     }
     
     &-btn {

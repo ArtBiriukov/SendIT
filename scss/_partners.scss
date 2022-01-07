@@ -2,15 +2,12 @@
   padding-top: 60px;
   padding-bottom: 50px;
 
-  &__slider {
-    @include displayFlex;
-  }
-
   &__wrapper {
-    min-width: 980px;
-    display: flex;
-    justify-content: space-between;
+    width: 980px;
   }
 
+  &__slide{
+    width: 94px;
+  }
 }
 

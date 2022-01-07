@@ -124,13 +124,3 @@ button {
 .checkbox:checked+label:after {
   opacity: 1;
 }
-
-/*SLIDER COMTROLL*/
-.slider__arrows {
-  cursor: pointer;
-
-  &:hover path {
-    transition: all .5s ease;
-    stroke: #008DCD;
-  }
-}
