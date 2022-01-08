@@ -27,15 +27,16 @@
 
   &__input {
     background-color: $color__blue;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $color__white;
     border-radius: 30px;
     padding: 18px 21px;
     outline: none;
     margin-bottom: 9px;
-  }
-
-  &__input::placeholder {
     color: $color__white;
+
+    &::placeholder {
+      color: $color__white;
+    }
   }
 
   &__btn {
@@ -49,5 +50,4 @@
       box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
     }
   }
-
 }

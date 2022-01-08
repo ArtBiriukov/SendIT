@@ -1,12 +1,11 @@
 .step {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: 460px 460px;
-    grid-gap: 30px 140px;
-    justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
   
-
+  display: grid;
+  grid-template-columns: 460px 460px;
+  grid-gap: 30px 140px;
+  justify-content: center;
 
   &__title {
     padding-bottom: 20px;
@@ -20,7 +19,6 @@
   &__img {
     padding-bottom: 41px;
   }
-
 }
 
 .call-step {

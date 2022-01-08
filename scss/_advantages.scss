@@ -8,7 +8,7 @@
     text-transform: uppercase;
   }
 
-  &__content {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,7 +20,8 @@
 
   &__img {
     margin-bottom: 34px;
-    &>img{
+
+    &>img {
       height: 160px;
     }
   }

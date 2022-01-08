@@ -36,26 +36,99 @@
           </ul>
         </nav>
 
-        <nav class="nav__mobile">
-          <div class="nav__mobile-button">
-            <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0H40V4H0V0Z" fill="white" />
-              <path d="M0 12H40V16H0V12Z" fill="white" />
-              <path d="M0 25H40V29H0V25Z" fill="white" />
-            </svg>
+        <div class="nav__button">
+          <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H40V4H0V0Z" fill="white" />
+            <path d="M0 12H40V16H0V12Z" fill="white" />
+            <path d="M0 25H40V29H0V25Z" fill="white" />
+          </svg>
+        </div>
+
+        <div class="nav__mobile">
+
+          <div class="nav__mobile-wrapper container">
+
+            <div class="nav__mobile-top">
+              <a href="#"><img class="nav__mobile-logo" src="img/black_logo.png" alt="logo"></a>
+              
+              <div class="nav__mobile-close">
+                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.50592 0L30.376 26.8701L27.5475 29.6985L0.677491 2.82843L3.50592 0Z" fill="#363636" />
+                  <path d="M30.3757 2.82843L3.50567 29.6985L0.677246 26.8701L27.5473 2.38419e-07L30.3757 2.82843Z"
+                    fill="#363636" />
+                </svg>
+
+              </div>
+            </div>
+
+            <nav class="nav__mobile-menu">
+              <ul class="nav__mobile-list">
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#header">Главная</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#description">Описание</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#advantages">Преимущества</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#review">Отзывы</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#partners">Партнёры</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#warranty">Гарантии</a>
+                </li>
+                <li class="nav__mobile-item">
+                  <a class="nav__mobile-link" href="#faq">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="nav__mobile-form">
+
+              <h2 class="main__form-title title-little">остались вопросы?</h2>
+
+              <form class="main__form" action="#">
+                <input class="main__form-input text" type="text" name="tel" placeholder="Ваш телефон">
+                <button class="main__form-btn btn text" type="submit">заказать звонок</button>
+
+                <div class="main__form-notific">
+                  <input class="checkbox" type="checkbox" name="agrea" id="agree_mobile">
+                  <label for="agree_mobile">
+                    <span class="main__form-text notific-text">Я согласен на обработку персональных
+                      данных</span>
+                  </label>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="nav__mobile-bottom">
+              <ul class="social-icons">
+                <li class="social-icon">
+                  <a href="vk.com">
+                    <img src="img/Forma11.png" alt="vk" title="Вконтакте">
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="instagram.com">
+                    <img src="img/Forma12.png" alt="instagram" title="Инстаграм">
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="facebook.com">
+                    <img src="img/Forma13.png" alt="facebook" title="FaceBook">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
           </div>
 
-          <ul class="nav__mobile-list">
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#header">Главная</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#description">Описание</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#advantages">Преимущества</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#review">Отзывы</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#partners">Партнёры</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#warranty">Гарантии</a></li>
-            <li class="nav__mobile-item"><a class="nav__mobile-link" href="#faq">FAQ</a></li>
-          </ul>
-
-        </nav>
+        </div>
 
       </div>
 
@@ -69,7 +142,7 @@
 
   <section class="offer__mobile container">
     <div class="offer__mobile_wrapper">
-      <h1 class="offer__mobile_title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
+      <h2 class="offer__mobile_title">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h2>
       <p class="offer__mobile_sub-title">А посылка доедет сама</p>
       <a href="#" class="btn btn__send">отправить посылку</a>
     </div>
@@ -102,26 +175,26 @@
   <section class="step container" id="step">
 
     <div class="step__item-content">
-      <img class="step__img" src="img/Asset 3@4x.png" alt="step 1">
+      <img class="step__img" src="img/Asset1.png" alt="step 1">
       <h3 class="step__title title-little">Шаг 1</h3>
       <p class="step__text">Придумайте что и кому отправить</p>
     </div>
 
     <div class="step__item-content">
-      <img class="step__img" src="img/Asset 4@4x 2.png" alt="step 2">
+      <img class="step__img" src="img/Asset2.png" alt="step 2">
       <h3 class="step__title title-little">Шаг 2</h3>
       <p class="step__text">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос,
         уточнит все необходимые данные</p>
     </div>
 
     <div class="step__item-content">
-      <img class="step__img" src="img/Asset 5@4x.png" alt="step 3">
+      <img class="step__img" src="img/Asset3.png" alt="step 3">
       <h3 class="step__title title-little">Шаг 3</h3>
       <p class="step__text">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
     </div>
 
     <div class="step__item-content">
-      <img class="step__img" src="img/Asset 6@4x.png" alt="step 4">
+      <img class="step__img" src="img/Asset4.png" alt="step 4">
       <h3 class="step__title title-little">Шаг 4</h3>
       <p class="step__text">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
     </div>
@@ -199,12 +272,12 @@
             </div>
           </div>
 
-          <article class="text">Отличный и качественный сервис.
+          <p class="text">Отличный и качественный сервис.
             Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что
             помимо
             удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
             (ведение
-            адресной базы, выбор и вызов курьера в пару кликов).</article>
+            адресной базы, выбор и вызов курьера в пару кликов).</p>
 
         </div>
 
@@ -233,10 +306,10 @@
             </div>
           </div>
 
-          <article class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
+          <p class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
             доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё
             это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
-            отзывчивость.</article>
+            отзывчивость.</p>
 
         </div>
 
@@ -256,7 +329,7 @@
   <section class="advantages container" id="advantages">
     <h2 class="advantages__title title-tablet title">наши преимущества</h2>
 
-    <div class="advantages__content">
+    <div class="advantages__wrapper">
 
       <div class="advantages__item">
         <div class="advantages__img">
@@ -318,8 +391,9 @@
             <h3 class="warranty__item-title">Страховка отправлений</h3>
           </div>
 
-          <article class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросуклиента Каждый куръер находится под пристальным вниманием менеджеров SendIt
-          </article>
+          <p class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по
+            запросуклиента Каждый куръер находится под пристальным вниманием менеджеров SendIt
+          </p>
         </div>
         <a href="#" class="warranty__item-btn btn">подробнее</a>
       </div>
@@ -332,9 +406,9 @@
             <h3 class="warranty__item-title">Прозрачность расчетов</h3>
           </div>
 
-          <article class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться с
+          <p class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться с
             каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
-            сервисом</article>
+            сервисом</p>
 
         </div>
         <a href="#" class="warranty__item-btn btn">подробнее</a>
@@ -348,8 +422,8 @@
             <h3 class="warranty__item-title">Лучшие поставщики</h3>
           </div>
 
-          <article class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
-            Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</article>
+          <p class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
+            Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p>
 
         </div>
         <a href="#" class="warranty__item-btn btn">подробнее</a>
@@ -371,19 +445,19 @@
 
         <div class="warranty__slider-slide slider__slide">
           <div class="warranty__item-content">
-  
+
             <div class="warranty__item-header">
               <img class="warranty__item-img" src="img/g1.png" alt="insurance">
               <h3 class="warranty__item-title">Страховка отправлений</h3>
             </div>
-  
-            <article class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
-              клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</article>
-  
+
+            <p class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
+              клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
+
           </div>
           <a href="#" class="warranty__item-btn btn">подробнее</a>
         </div>
-  
+
         <div class="warranty__slider-slide slider__slide">
           <div class="warranty__item-content">
 
@@ -391,15 +465,16 @@
               <img class="warranty__item-img" src="img/g2.png" alt="calculation">
               <h3 class="warranty__item-title">Прозрачность расчетов</h3>
             </div>
-    
-            <article class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться с
+
+            <p class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться
+              с
               каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
-              сервисом</article>
-  
+              сервисом</p>
+
           </div>
           <a href="#" class="warranty__item-btn btn">подробнее</a>
         </div>
-  
+
         <div class="warranty__slider-slide slider__slide">
           <div class="warranty__item-content">
 
@@ -407,10 +482,10 @@
               <img class="warranty__item-img" src="img/g3.png" alt="supplier">
               <h3 class="warranty__item-title">Лучшие поставщики</h3>
             </div>
-  
-            <article class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
-              Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</article>
-  
+
+            <p class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
+              Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p>
+
           </div>
           <a href="#" class="warranty__item-btn btn">подробнее</a>
         </div>
@@ -425,7 +500,7 @@
       </div>
 
     </div>
-    
+
   </section>
 
   <section class="faq container" id="faq">
@@ -504,7 +579,7 @@
 
   </section>
 
-  <section class="partners container" id="partners">
+  <div class="partners container" id="partners">
 
     <div class="partners__slider slider">
 
@@ -577,7 +652,7 @@
 
     </div>
 
-  </section>
+  </div>
 
   <footer class="footer container" id="footer">
 
@@ -585,26 +660,27 @@
 
       <h2 class="footer__title title-little">остались вопросы?</h2>
 
-      <form class="footer__form" action="#">
-        <input class="footer__form-input text" type="text" name="tel" placeholder="Ваш телефон">
-        <button class="footer__form-btn btn text" type="submit">заказать звонок</button>
 
-        <div class="footer__form-notific">
+      <form class="main__form" action="#">
+        <input class="main__form-input text" type="text" name="tel" placeholder="Ваш телефон">
+        <button class="main__form-btn btn text" type="submit">заказать звонок</button>
+
+        <div class="main__form-notific">
           <input class="checkbox" type="checkbox" name="agrea" id="agree__footer">
           <label for="agree__footer">
-            <span class="footer__form-text notific-text">Я согласен на обработку персональных
+            <span class="main__form-text notific-text">Я согласен на обработку персональных
               данных</span>
           </label>
         </div>
-
       </form>
+
     </div>
 
     <div class="footer__menu">
 
       <div class="footer__logo">
         <a href="#" class="logo__link">
-          <img class="logo" src="img/footer_logo.png" alt="Logo" title="Главная">
+          <img class="logo" src="img/black_logo.png" alt="Logo" title="Главная">
         </a>
       </div>
 
@@ -634,15 +710,15 @@
         </ul>
       </nav>
 
-      <nav class="nav__mobile">
-        <div class="nav__mobile-button">
-          <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H40V4H0V0Z" fill="black" />
-            <path d="M0 12H40V16H0V12Z" fill="black" />
-            <path d="M0 25H40V29H0V25Z" fill="black" />
-          </svg>
-        </div>
+      <div class="nav__button">
+        <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H40V4H0V0Z" fill="black" />
+          <path d="M0 12H40V16H0V12Z" fill="black" />
+          <path d="M0 25H40V29H0V25Z" fill="black" />
+        </svg>
+      </div>
 
+      <!-- <nav class="nav__mobile">
         <ul class="nav__mobile-list">
           <li class="nav__mobile-item"><a class="nav__mobile-link" href="#header">Главная</a></li>
           <li class="nav__mobile-item"><a class="nav__mobile-link" href="#description">Описание</a></li>
@@ -652,33 +728,33 @@
           <li class="nav__mobile-item"><a class="nav__mobile-link" href="#warranty">Гарантии</a></li>
           <li class="nav__mobile-item"><a class="nav__mobile-link" href="#faq">FAQ</a></li>
         </ul>
-
-      </nav>
+      </nav> -->
 
     </div>
 
     <div class="footer__bottom">
       <p class="footer__bottom-text">© Сами копипастим и вам разрешаем <span class="year">2021</span></p>
-    
+
       <ul class="footer__bottom-icons">
         <li class="footer__bottom-icon">
-          <a href="vk.com" alt="vk.com">
+          <a href="vk.com">
             <img src="img/Forma11.png" alt="vk" title="Вконтакте">
           </a>
         </li>
         <li class="footer__bottom-icon">
-          <a href="instagram.com" alt="instagram.com">
+          <a href="instagram.com">
             <img src="img/Forma12.png" alt="instagram" title="Инстаграм">
           </a>
         </li>
         <li class="footer__bottom-icon">
-          <a href="facebook.com" alt="facebook.com">
+          <a href="facebook.com">
             <img src="img/Forma13.png" alt="facebook" title="FaceBook">
           </a>
         </li>
       </ul>
 
-      <p class="footer__bottom-text footer__bottom-text__info">Сверстано<a href="#" class="footer__bottom-link"> Biryukov Art</a></p>
+      <p class="footer__bottom-text footer__bottom-text__info">Сверстано<a href="#" class="footer__bottom-link">
+          Biryukov Art</a></p>
     </div>
 
   </footer>

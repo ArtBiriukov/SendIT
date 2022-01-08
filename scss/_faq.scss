@@ -2,7 +2,7 @@
   background-color: #D2ECF7;
   padding-top: 64px;
   padding-bottom: 59px;
-  
+
   &__title {
     text-transform: uppercase;
     margin-bottom: 34px;
@@ -31,15 +31,15 @@
     user-select: none;
     cursor: pointer;
 
-    &:not(.active-item){
+    &:not(.active-item) {
       border-radius: 200px;
-    } 
+    }
 
     &::after {
       content: "";
       width: 18px;
       height: 10px;
-      
+
       background-image: url(../img/Rectangle.svg);
       background-repeat: no-repeat;
 
@@ -47,9 +47,9 @@
       transform: rotate(-180deg);
     }
 
-    &:not(.active-item)::after{
+    &:not(.active-item)::after {
       transform: rotate(0deg);
-    } 
+    }
   }
 
   &__item-content {

@@ -1,14 +1,14 @@
-.slider{
+.slider {
   @include displayFlex;
 
-  &__wrapper{
+  &__wrapper {
     @include displayFlex;
     overflow: hidden;
   }
 
   &__arrows {
     cursor: pointer;
-  
+
     &:hover path {
       transition: all .5s ease;
       stroke: #008DCD;

@@ -10,6 +10,10 @@ body {
   font-style: normal;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -91,7 +95,7 @@ button {
   opacity: 0;
 }
 
-.checkbox + label {
+.checkbox+label {
   position: relative;
   cursor: pointer;
 
