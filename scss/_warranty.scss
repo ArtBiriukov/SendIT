@@ -1,0 +1,45 @@
+.warranty {
+  padding-top: 80px;
+  padding-bottom: 64px;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 360px;
+
+    &-header {
+      margin-bottom: 15px;
+    }
+
+    &-img {
+      margin-bottom: 25px;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &-btn {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.call {
+  background-color: $color__blue;
+  padding-top: 73px;
+  padding-bottom: 39px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: $color__white;
+  }
+
+  &__heading {
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+  }
+
+  &__input {
+    background-color: $color__blue;
+    border: 1px solid $color__white;
+    border-radius: 30px;
+    padding: 18px 21px;
+    outline: none;
+    margin-bottom: 9px;
+    color: $color__white;
+
+    &::placeholder {
+      color: $color__white;
+    }
+  }
+
+  &__btn {
+    color: $color__dark;
+    background-color: $color__orange;
+    border: 1px solid $color__orange;
+    margin-bottom: 14px;
+    font-weight: 700;
+
+    &:hover {
+      box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55);
+    }
+  }
+}

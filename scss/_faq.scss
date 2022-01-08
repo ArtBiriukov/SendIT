@@ -1,0 +1,65 @@
+.faq {
+  background-color: #D2ECF7;
+  padding-top: 64px;
+  padding-bottom: 59px;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 16px 29px;
+  }
+
+  &__item-heading {
+    height: 60px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: stretch;
+    grid-column-gap: 75px;
+
+    background-color: #fff;
+    padding: 15px 30px;
+
+    border-radius: 30px 0px;
+    user-select: none;
+    cursor: pointer;
+
+    &:not(.active-item) {
+      border-radius: 200px;
+    }
+
+    &::after {
+      content: "";
+      width: 18px;
+      height: 10px;
+
+      background-image: url(../img/Rectangle.svg);
+      background-repeat: no-repeat;
+
+      transition: transform .2s ease-in-out;
+      transform: rotate(-180deg);
+    }
+
+    &:not(.active-item)::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__item-content {
+    padding: 20px 30px;
+    background-color: #F7F7F7;
+    border-radius: 0px 0px 30px 30px;
+    display: block;
+
+    &:not(.show-item) {
+      display: none;
+    }
+  }
+}

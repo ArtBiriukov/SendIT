@@ -1,0 +1,41 @@
+.review {
+  padding-top: 69px;
+  padding-bottom: 57px;
+
+  &__title {
+    text-transform: uppercase;
+    padding-bottom: 70px;
+  }
+
+  &__wrapper {
+    width: 960px;
+  }
+
+  &__slide {
+    width: 460px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 26px;
+  }
+
+  &__about {
+    margin-left: 40px;
+
+    &_name {
+      font-weight: 400;
+      padding-bottom: 18px;
+    }
+
+    &_company {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 8px;
+    }
+
+    &_text {
+      padding-bottom: 6px;
+    }
+  }
+}

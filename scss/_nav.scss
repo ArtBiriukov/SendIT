@@ -1,0 +1,78 @@
+.nav {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 22px;
+    transition: all 0.3s ease-out;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__mobile {
+    display: none;
+
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+
+    /*decorators*/
+
+    &-wrapper {
+      padding-top: 13px;
+      padding-bottom: 28px;
+    }
+
+    &-top {
+      @include displayFlex;
+      margin-bottom: 20px;
+    }
+
+    &-close {
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+
+      &>svg path:hover{
+        fill: $color__blue;
+      }
+    }
+
+    &-menu {
+      margin-bottom: 30px;
+    }
+
+    &-item {
+      font-size: 18px;
+      line-height: 22px;
+
+      &:not(:last-child){
+        margin-bottom: 26px;
+      }
+    }
+
+    &-link {
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $color__blue;
+      }
+    }
+  }
+}
+
+.social-icons{
+  @include displayFlex;
+}
+
+.social-icon > a > img {
+  display: block;
+  width: 36px;
+}
