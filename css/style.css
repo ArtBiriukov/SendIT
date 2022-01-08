@@ -1268,6 +1268,9 @@ header {
     cursor: pointer;
     display: block;
   }
+  .nav__mobile {
+    display: none;
+  }
   .header {
     padding-top: 27px;
     padding-bottom: 221px;
