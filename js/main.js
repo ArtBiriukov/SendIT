@@ -91,23 +91,24 @@ const modalWindowClose = () => {
 
 /*Accordion*/
 
-const faqItems = document.querySelectorAll('.faq__item');
+const faqItems = document.querySelectorAll('.faq__item-heading');
 
 faqItems.forEach(faqItem => {
-  faqItem.addEventListener('click', (event) => {
-    let faqContent = faqItem.querySelector('.faq__item-content');
-    let faqBody = faqItem.querySelector('.faq__item-content__body').offsetHeight;
-    
-    // let faqPx = faqContent.style.height;
-    // //`${faqBody}px`
 
-    console.log(!faqContent.style.height);
-    
-    if(!faqContent.style.height) {
-      faqContent.style.height = `${faqBody}px`;
-    } else {
-      faqContent.style.height = ``;
-    }
+  faqItem.addEventListener('click', () => {
+
+    const faqBody = faqItem.parentNode.querySelector('.faq__item-body'),
+          faqContent = faqItem.parentNode.querySelector('.faq__item-content').offsetHeight;
+ 
+      if(!faqBody.style.height) {
+        faqBody.style.cssText = `height: ${faqContent}px`;
+        faqItem.classList.add('active');
+      } else {
+        faqBody.style.cssText = ``;
+        faqItem.classList.remove('active');
+      }
+  
+
   })
 })
 
