@@ -1,5 +1,4 @@
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +7,14 @@
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease-out;
+
+  &-open{
+    visibility: inherit;
+    opacity: 1;
+  }
 }
 
 .modal {
@@ -45,24 +52,24 @@
   }
 
   &__active {
-    display: block;
+    opacity: 1;
   }
 
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 
-.form__modal {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+    &-input {
+      color: $color__blue;
+      padding: 18px 21px;
 
-  &-input {
-    color: $color__blue;
-    padding: 18px 21px;
+      border: 1px solid $color__blue;
+      border-radius: 30px;
+      margin-bottom: 13px;
 
-    border: 1px solid $color__blue;
-    border-radius: 30px;
-    margin-bottom: 13px;
-
-    outline: none;
+      outline: none;
+    }
   }
+
 }

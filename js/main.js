@@ -2,8 +2,8 @@
 const preloaderEl = document.createElement('div');
 const body = document.querySelector('body');
 
-preloaderEl.classList.add('preloader');
 preloaderEl.innerHTML = ` 
+<div class="preloader">
   <div class="loading">
     <div class="sk-folding-cube">
       <div class="sk-cube sk-cube-1"></div>
@@ -11,7 +11,9 @@ preloaderEl.innerHTML = `
       <div class="sk-cube sk-cube-4"></div>
       <div class="sk-cube sk-cube-3"></div>
     </div>
-  </div>`;
+  </div>
+</div> `;
+
 body.style.overflow = 'hidden';
 body.append(preloaderEl);
 
@@ -20,12 +22,14 @@ window.onload = function () {
   preloaderEl.remove();
 }
 
+
+
+
 /*smoothScroll*/
 const navItemsEl = document.querySelectorAll('.nav__item');
 
-const smoothScroll = event => {
+const smoothScroll = (event) => {
   event.preventDefault();
-
   const itemHash = event.target.getAttribute('href');
 
   if(itemHash) {
@@ -34,26 +38,21 @@ const smoothScroll = event => {
       block: 'start'
     });
   }
-
 };
 
 navItemsEl.forEach(navItem => {
-  navItem.addEventListener('click', smoothScroll);
+  navItem.addEventListener('click', smoothScroll)
 });
 
-
 /*modal window*/
-const overlay = document.createElement('div'),
-      modal = document.createElement('div'),
-      buttons = document.querySelectorAll('.btn');
+const modal = document.createElement('div'),
+      buttons = document.querySelectorAll('.btn'),
+      overlay = document.querySelector('.overlay');
 
 /*Убираем дефолтное поведение кнопок*/
-buttons.forEach(button => button.addEventListener('click', event => {
-  event.preventDefault();
-}));
+buttons.forEach(button => button.addEventListener('click', event => event.preventDefault()));
 
 /*Добавляем классы к созданным элементам*/
-overlay.classList.add('overlay');
 modal.classList.add('modal');
 
 modal.innerHTML = `
@@ -67,28 +66,64 @@ modal.innerHTML = `
 
   <h2 class=" modal__heading">Оставьте заявку, и мы Вам перезвоним!</h2>
 
-  <form action="#" class="form__modal">
-    <input class="form__modal-input text" type="text" name="name" placeholder="Ваше имя">
-    <input class="form__modal-input text" type="tel" name="tel" placeholder="Ваш телефон">
-    <button class="form__modal-btn btn order-btn" type="submit">Заказать звонок</button>
+  <form action="#" class="modal__form">
+    <input class="modal__form-input text" type="text" name="name" placeholder="Ваше имя">
+    <input class="modal__form-input text" type="tel" name="tel" placeholder="Ваш телефон">
+    <button class="modal__form-btn btn order-btn" type="submit">Заказать звонок</button>
   </form>`;
 
 /*Функции*/
+const overlayToggel = () => {
+  overlay.classList.toggle('overlay-open');
+}
+
 const modalWindowOpen = () => {
   body.append(modal);
-  body.append(overlay);
 
+  overlayToggel();
   modal.style.display = "block";
-  overlay.style.display = "block";
 };
 
 const modalWindowClose = () => {
-  overlay.remove();
+  overlayToggel();
   modal.remove();
 };
 
+/*Accordion*/
+
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach(faqItem => {
+  faqItem.addEventListener('click', (event) => {
+    let faqContent = faqItem.querySelector('.faq__item-content');
+    let faqBody = faqItem.querySelector('.faq__item-content__body').offsetHeight;
+    
+    // let faqPx = faqContent.style.height;
+    // //`${faqBody}px`
+
+    console.log(!faqContent.style.height);
+    
+    if(!faqContent.style.height) {
+      faqContent.style.height = `${faqBody}px`;
+    } else {
+      faqContent.style.height = ``;
+    }
+  })
+})
+
+
+/*Mobile Navbar */
+const headerMobile = document.getElementById('header__mobile');
+
+const toggelMenu = () => {
+  headerMobile.classList.toggle('nav__active');
+}
+
+/* Делегирование */
 document.addEventListener('click', event => {
   const target = event.target;
+
+  // console.log(target);
 
   if(target.closest('.btn__send')) {
     event.preventDefault();
@@ -99,20 +134,9 @@ document.addEventListener('click', event => {
     modalWindowClose();
   }
 
-})
+  if(target.closest('.nav__button') || target.closest('.nav__mobile-close') || target.closest('.nav__mobile-link')) {
+    toggelMenu();
+    overlayToggel();
+  }
 
-/*Accordion*/
-
-const faqItems = document.querySelectorAll('.faq__item');
-
-faqItems.forEach(faqItem => {
-  faqItem.addEventListener('click', event => {
-    const target = event.target;
-    const itemContent = document.querySelector('.faq__item-content'); 
-
-    target.classList.add('active-item');
-    itemContent.classList.add('show-item');
-
-
-  })
 })
