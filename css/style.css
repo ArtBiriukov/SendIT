@@ -1014,18 +1014,17 @@ header {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity .5s ease-out;
-  transition: opacity .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .overlay-open {
-  visibility: inherit;
+  z-index: 1;
   opacity: 1;
 }
 
@@ -1042,6 +1041,10 @@ header {
           box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.3);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.modal__show {
+  display: block;
 }
 
 .modal__close {

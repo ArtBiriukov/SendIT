@@ -22,17 +22,17 @@ window.onload = function () {
   preloaderEl.remove();
 }
 
-
-
-
 /*smoothScroll*/
 const navItemsEl = document.querySelectorAll('.nav__item');
 
-const smoothScroll = (event) => {
+/*Mobile Navbar */
+const headerMobile = document.getElementById('header__mobile');
+
+const smoothScroll = event => {
   event.preventDefault();
   const itemHash = event.target.getAttribute('href');
 
-  if(itemHash) {
+  if (itemHash) {
     document.querySelector('' + itemHash).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
@@ -40,19 +40,13 @@ const smoothScroll = (event) => {
   }
 };
 
-navItemsEl.forEach(navItem => {
-  navItem.addEventListener('click', smoothScroll)
-});
+navItemsEl.forEach(navItem => navItem.addEventListener('click', smoothScroll));
 
 /*modal window*/
 const modal = document.createElement('div'),
-      buttons = document.querySelectorAll('.btn'),
       overlay = document.querySelector('.overlay');
 
-/*Убираем дефолтное поведение кнопок*/
-buttons.forEach(button => button.addEventListener('click', event => event.preventDefault()));
-
-/*Добавляем классы к созданным элементам*/
+/*Добавляем класс к созданному элементу*/
 modal.classList.add('modal');
 
 modal.innerHTML = `
@@ -73,24 +67,26 @@ modal.innerHTML = `
   </form>`;
 
 /*Функции*/
-const overlayToggel = () => {
-  overlay.classList.toggle('overlay-open');
-}
+//Показать / спрятать оверлай 
+const overlayToggel = () => overlay.classList.toggle('overlay-open');
 
+//Показать / спрятать мобильное меню
+const toggelMenu = () => headerMobile.classList.toggle('nav__active');
+
+//Показать модальное окно
 const modalWindowOpen = () => {
   body.append(modal);
-
   overlayToggel();
-  modal.style.display = "block";
+  modal.classList.add('modal__show');
 };
 
+//Скрыть модальное окно
 const modalWindowClose = () => {
   overlayToggel();
   modal.remove();
 };
 
 /*Accordion*/
-
 const faqItems = document.querySelectorAll('.faq__item-heading');
 
 faqItems.forEach(faqItem => {
@@ -113,31 +109,41 @@ faqItems.forEach(faqItem => {
 })
 
 
-/*Mobile Navbar */
-const headerMobile = document.getElementById('header__mobile');
-
-const toggelMenu = () => {
-  headerMobile.classList.toggle('nav__active');
-}
-
 /* Делегирование */
 document.addEventListener('click', event => {
   const target = event.target;
 
-  // console.log(target);
+  /*Убираем дефолтное поведение кнопок*/
+  if (target.closest('.btn')) {
+    event.preventDefault();
+  }
 
-  if(target.closest('.btn__send')) {
+  if (target.closest('.btn__send')) {
     event.preventDefault();
     modalWindowOpen();
   }
 
-  if(target.closest('.modal__close') || target.closest('.overlay')) {
+  if (target.closest('.modal__close')) {
     modalWindowClose();
   }
 
-  if(target.closest('.nav__button') || target.closest('.nav__mobile-close') || target.closest('.nav__mobile-link')) {
-    toggelMenu();
+  /*Скрывать мобильное меню*/
+  if (target.closest('.nav__button') || target.closest('.nav__mobile-close') || target.closest('.nav__mobile-link')) {
     overlayToggel();
+    toggelMenu();
   }
 
+  /*Если клик по оверлай */
+  if (target.classList.contains('overlay')) {
+    
+    /*закрыть модально окно */
+    if (modal.classList.contains('modal__show')) {
+      modalWindowClose();
+    }
+    /*Скрыть мобильное меню */
+    if (headerMobile.classList.contains('nav__active')) {
+      overlayToggel();
+      toggelMenu();
+    }
+  }
 })

@@ -363,7 +363,7 @@
 
   /*form*/
 
-  .main__form{
+  .main__form {
     grid-template-columns: 220px 220px;
     grid-template-rows: 48px auto;
     grid-gap: 7px 20px;
@@ -372,7 +372,7 @@
       padding: 15px 30px;
       border-radius: 30px;
     }
-  
+
     &-btn {
       padding: 15px 40px;
     }
@@ -692,15 +692,13 @@
         line-height: 17px;
         padding: 0px 23px;
       }
-      
+
       &-content {
         font-size: 14px;
         line-height: 17px;
       }
     }
   }
-
-
 
   /*partners*/
 
@@ -757,9 +755,9 @@
     }
   }
 
-    /*form*/
+  /*form*/
 
-  .main__form{
+  .main__form {
     width: 280px;
     display: flex;
     flex-direction: column;
@@ -769,7 +767,7 @@
       height: 40px;
       padding: 14px 24px;
     }
-  
+
     &-btn {
       height: 40px;
     }
