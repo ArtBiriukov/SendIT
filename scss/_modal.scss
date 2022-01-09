@@ -1,13 +1,20 @@
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+
+  opacity: 0;
+  transition: all .5s ease-out;
+
+  &-open{
+    z-index: 1;
+    opacity: 1;
+  }
 }
 
 .modal {
@@ -24,6 +31,10 @@
   box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.3);
 
   transform: translate(-50%, -50%);
+
+  &__show{
+    display: block;
+  }
 
   &__close {
     position: absolute;
@@ -45,24 +56,24 @@
   }
 
   &__active {
-    display: block;
+    opacity: 1;
   }
 
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 
-.form__modal {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+    &-input {
+      color: $color__blue;
+      padding: 18px 21px;
 
-  &-input {
-    color: $color__blue;
-    padding: 18px 21px;
+      border: 1px solid $color__blue;
+      border-radius: 30px;
+      margin-bottom: 13px;
 
-    border: 1px solid $color__blue;
-    border-radius: 30px;
-    margin-bottom: 13px;
-
-    outline: none;
+      outline: none;
+    }
   }
+
 }

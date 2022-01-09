@@ -44,7 +44,7 @@
           </svg>
         </div>
 
-        <div class="nav__mobile">
+        <div class="nav__mobile" id="header__mobile">
 
           <div class="nav__mobile-wrapper container">
 
@@ -63,25 +63,25 @@
 
             <nav class="nav__mobile-menu">
               <ul class="nav__mobile-list">
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#header">Главная</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#description">Описание</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#advantages">Преимущества</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#review">Отзывы</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#partners">Партнёры</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#warranty">Гарантии</a>
                 </li>
-                <li class="nav__mobile-item">
+                <li class="nav__item nav__mobile-item">
                   <a class="nav__mobile-link" href="#faq">FAQ</a>
                 </li>
               </ul>
@@ -219,7 +219,7 @@
       <form class="call__form" action="#">
 
         <input class="call__input text" type="tel" name="phone" placeholder="Ваш телефон">
-        <button class="call__btn text btn" type="submit">заказать звонок</button>
+        <button class="call__btn btn order-btn text" type="submit">заказать звонок</button>
 
         <input class="checkbox" type="checkbox" name="agree" id="agree">
 
@@ -514,9 +514,11 @@
           На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -525,9 +527,11 @@
           Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -536,9 +540,11 @@
           Вы не сможете доставить посылку за границу
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -547,9 +553,11 @@
           Вы не занимаетесь такими простыми грузами, как мебель
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -558,9 +566,11 @@
           Я отправляю вместе с коллегами, мы можем легко запутаться где чьё
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -569,9 +579,11 @@
           Нужно заполнять кучу документов
         </h3>
 
-        <div class="faq__item-content">
-          Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
-          доставки, которые будут доставлять вашу посылку
+        <div class="faq__item-body">
+          <div class="faq__item-content">
+            Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы
+            доставки, которые будут доставлять вашу посылку
+          </div>
         </div>
       </div>
 
@@ -660,10 +672,9 @@
 
       <h2 class="footer__title title-little">остались вопросы?</h2>
 
-
       <form class="main__form" action="#">
         <input class="main__form-input text" type="text" name="tel" placeholder="Ваш телефон">
-        <button class="main__form-btn btn text" type="submit">заказать звонок</button>
+        <button class="main__form-btn btn order-btn text" type="submit">заказать звонок</button>
 
         <div class="main__form-notific">
           <input class="checkbox" type="checkbox" name="agrea" id="agree__footer">
@@ -758,32 +769,9 @@
     </div>
 
   </footer>
-
-  <!-- modal window -->
-
-
-  <div class="modal">
-    <div class="modal__close">
-      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12.3502 1.74379C12.5455 1.54853 12.5455 1.23195 12.3502 1.03669C12.155 0.841425 11.8384 0.841425 11.6431 1.03669L12.3502 1.74379ZM1.03653 11.6433C0.841269 11.8386 0.841268 12.1551 1.03653 12.3504C1.23179 12.5457 1.54838 12.5457 1.74364 12.3504L1.03653 11.6433ZM11.5562 12.2635C11.7515 12.4587 12.068 12.4587 12.2633 12.2635C12.4586 12.0682 12.4586 11.7516 12.2633 11.5563L11.5562 12.2635ZM1.6567 0.949748C1.46144 0.754486 1.14485 0.754486 0.94959 0.949748C0.754328 1.14501 0.754328 1.46159 0.94959 1.65685L1.6567 0.949748ZM11.6431 1.03669L6.33983 6.33999L7.04694 7.04709L12.3502 1.74379L11.6431 1.03669ZM6.33983 6.33999L1.03653 11.6433L1.74364 12.3504L7.04694 7.04709L6.33983 6.33999ZM6.33983 7.0471L11.5562 12.2635L12.2633 11.5563L7.04694 6.33999L6.33983 7.0471ZM7.04694 6.33999L1.6567 0.949748L0.94959 1.65685L6.33983 7.0471L7.04694 6.33999Z"
-          fill="#008DCD" />
-      </svg>
-    </div>
-
-    <h2 class=" modal__heading">Оставьте заявку, и мы Вам перезвоним!</h2>
-
-    <form action="#" class="form__modal">
-      <input class="form__modal-input text" type="text" name="name" placeholder="Ваше имя">
-      <input class="form__modal-input text" type="tel" name="tel" placeholder="Ваш телефон">
-      <button class="form__modal-btn btn" type="submit">Заказать звонок</button>
-    </form>
-
-
-  </div>
-
   <div class="overlay"></div>
-  <!-- <script src="js/main.js"></script> -->
+
+  <script src="js/main.js"></script>
 
 </body>
 
