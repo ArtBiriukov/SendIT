@@ -18,9 +18,8 @@
 
   &__item {
     width: 560px;
-    position: relative;
-  
-    &-heading{
+
+    &-heading {
       position: relative;
       height: 60px;
 
@@ -42,8 +41,8 @@
       user-select: none;
       cursor: pointer;
       transition: 0.15s;
-      
-      &::after{
+
+      &::after {
         content: '';
         width: 18px;
         height: 10px;
@@ -64,10 +63,9 @@
       &:not(.active)::after {
         transform: rotate(0deg);
       }
-
     }
 
-    &-body{
+    &-body {
       background-color: #F7F7F7;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
@@ -76,7 +74,7 @@
       height: 0;
     }
 
-    &-content{
+    &-content {
       padding: 20px 30px;
     }
   }

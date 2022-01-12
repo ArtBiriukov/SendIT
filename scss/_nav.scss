@@ -15,7 +15,7 @@
   }
 
   &__mobile {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@
       cursor: pointer;
       transition: all 0.3s ease-out;
 
-      &>svg path:hover{
+      &>svg path:hover {
         fill: $color__blue;
       }
     }
@@ -54,7 +54,7 @@
       font-size: 18px;
       line-height: 22px;
 
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: 26px;
       }
     }
@@ -73,11 +73,11 @@
   }
 }
 
-.social-icons{
+.social-icons {
   @include displayFlex;
 }
 
-.social-icon > a > img {
+.social-icon>a>img {
   display: block;
   width: 36px;
 }

@@ -11,7 +11,7 @@
   opacity: 0;
   transition: all .5s ease-out;
 
-  &-open{
+  &-open {
     z-index: 1;
     opacity: 1;
   }
@@ -32,7 +32,7 @@
 
   transform: translate(-50%, -50%);
 
-  &__show{
+  &__show {
     display: block;
   }
 
@@ -75,5 +75,4 @@
       outline: none;
     }
   }
-
 }

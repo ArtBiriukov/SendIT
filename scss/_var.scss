@@ -7,4 +7,10 @@ $color__white-orange: #FCE39C;
 $color__dark: #363636;
 $color__gray: #B3B3B3;
 $color__white-gray: #E1E1E1;
-$color__white: #fff
+$color__white: #fff;
+
+$spinkit-size: 4em !default;
+$spinkit-spinner-color: #008DCD !default;
+$cubeCount: 4;
+$animationDuration: 2.4s;
+$delayRange: ($animationDuration / 2);
