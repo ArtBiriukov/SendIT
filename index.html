@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>SendIt</title>
 </head>
@@ -20,7 +21,7 @@
           </a>
         </div>
 
-        <nav class="nav">
+        <nav class="nav" data-aos="fade-down">
           <ul class="nav__list">
             <li class="nav__item header__nav-item"><a class="nav__link header__nav-link" href="#header">Главная</a></li>
             <li class="nav__item header__nav-item"><a class="nav__link header__nav-link"
@@ -50,7 +51,7 @@
 
             <div class="nav__mobile-top">
               <a href="#"><img class="nav__mobile-logo" src="img/black_logo.png" alt="logo"></a>
-              
+
               <div class="nav__mobile-close">
                 <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.50592 0L30.376 26.8701L27.5475 29.6985L0.677491 2.82843L3.50592 0Z" fill="#363636" />
@@ -132,7 +133,7 @@
 
       </div>
 
-      <div class="header__offer">
+      <div class="header__offer" data-aos="fade-right">
         <h1 class="header__offer-heading heading">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
         <p class="header__offer-title title">А посылка доедет сама</p>
         <a href="#" class="btn btn__send">отправить посылку</a>
@@ -153,7 +154,7 @@
       Мы – агрегатор служб доставки
     </h2>
 
-    <div class="description__wrapper">
+    <div class="description__wrapper" data-aos="zoom-in-down">
       <div class="description__content">
         <h2 class="description__title title">
           Мы – агрегатор служб доставки
@@ -174,26 +175,26 @@
 
   <section class="step container" id="step">
 
-    <div class="step__item-content">
+    <div class="step__item-content" data-aos="zoom-in-right">
       <img class="step__img" src="img/Asset1.png" alt="step 1">
       <h3 class="step__title title-little">Шаг 1</h3>
       <p class="step__text">Придумайте что и кому отправить</p>
     </div>
 
-    <div class="step__item-content">
+    <div class="step__item-content" data-aos="zoom-in-left">
       <img class="step__img" src="img/Asset2.png" alt="step 2">
       <h3 class="step__title title-little">Шаг 2</h3>
       <p class="step__text">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос,
         уточнит все необходимые данные</p>
     </div>
 
-    <div class="step__item-content">
+    <div class="step__item-content" data-aos="zoom-in-right">
       <img class="step__img" src="img/Asset3.png" alt="step 3">
       <h3 class="step__title title-little">Шаг 3</h3>
       <p class="step__text">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
     </div>
 
-    <div class="step__item-content">
+    <div class="step__item-content" data-aos="zoom-in-left">
       <img class="step__img" src="img/Asset4.png" alt="step 4">
       <h3 class="step__title title-little">Шаг 4</h3>
       <p class="step__text">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
@@ -245,74 +246,188 @@
         </svg>
       </div>
 
-      <div class="review__wrapper slider__wrapper">
+      <div class="review__inner">
 
-        <div class="review__slide slider__slide">
+        <div class="review__wrapper slider__wrapper">
 
-          <div class="review__content">
+          <div class="review__slide slider__slide">
+            <div class="review__slide-content">
+              <div class="review__content">
 
-            <img class="review__content-photo" src="img/img1.jpg" alt="Photo">
+                <img class="review__content-photo" src="img/img1.jpg" alt="Photo">
 
-            <div class="review__about">
+                <div class="review__about">
 
-              <h3 class="review__about_name title">Дарья</h3>
-              <p class="review__about_company">La Intuicion</p>
+                  <h3 class="review__about_name title">Дарья</h3>
+                  <p class="review__about_company">La Intuicion</p>
 
-              <p class="review__about_text text">Посылка:
-                <span class="review__text">товары</span>
-              </p>
+                  <p class="review__about_text text">Посылка:
+                    <span class="review__text">товары</span>
+                  </p>
 
-              <p class="review__about_text text">Откуда:
-                <span class="review__text">Москва</span>
-              </p>
+                  <p class="review__about_text text">Откуда:
+                    <span class="review__text">Москва</span>
+                  </p>
 
-              <p class="review__about_text text">Куда:
-                <span class="review__text">Нижневартовск</span>
-              </p>
+                  <p class="review__about_text text">Куда:
+                    <span class="review__text">Нижневартовск</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="text">Отличный и качественный сервис.
+                Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены,
+                что
+                помимо
+                удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
+                (ведение
+                адресной базы, выбор и вызов курьера в пару кликов).</p>
+
+            </div>
+
+          </div>
+
+          <div class="review__slide slider__slide">
+            <div class="review__slide-content">
+              <div class="review__content">
+
+                <img class="review__content-photo" src="img/img2.jpg" alt="Photo">
+
+                <div class="review__about">
+
+                  <h3 class="review__about_name title">Елена</h3>
+                  <p class="review__about_company">Global Logic</p>
+
+                  <p class="review__about_text text">Посылка:
+                    <span class="review__text">товары</span>
+                  </p>
+
+                  <p class="review__about_text text">Откуда:
+                    <span class="review__text">Москва</span>
+                  </p>
+
+                  <p class="review__about_text text">Куда:
+                    <span class="review__text">Калининград</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
+                доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор –
+                всё
+                это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
+                отзывчивость.</p>
             </div>
           </div>
 
-          <p class="text">Отличный и качественный сервис.
-            Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что
-            помимо
-            удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
-            (ведение
-            адресной базы, выбор и вызов курьера в пару кликов).</p>
+          <div class="review__slide slider__slide">
+            <div class="review__slide-content">
+              <div class="review__content">
 
-        </div>
+                <img class="review__content-photo" src="img/img1.jpg" alt="Photo">
 
-        <div class="review__slide slider__slide">
+                <div class="review__about">
 
-          <div class="review__content">
+                  <h3 class="review__about_name title">Дарья</h3>
+                  <p class="review__about_company">La Intuicion</p>
 
-            <img class="review__content-photo" src="img/img2.jpg" alt="Photo">
+                  <p class="review__about_text text">Посылка:
+                    <span class="review__text">товары</span>
+                  </p>
 
-            <div class="review__about">
+                  <p class="review__about_text text">Откуда:
+                    <span class="review__text">Москва</span>
+                  </p>
 
-              <h3 class="review__about_name title">Елена</h3>
-              <p class="review__about_company">Global Logic</p>
+                  <p class="review__about_text text">Куда:
+                    <span class="review__text">Нижневартовск</span>
+                  </p>
+                </div>
+              </div>
 
-              <p class="review__about_text text">Посылка:
-                <span class="review__text">товары</span>
-              </p>
+              <p class="text">Отличный и качественный сервис.
+                Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены,
+                что
+                помимо
+                удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
+                (ведение
+                адресной базы, выбор и вызов курьера в пару кликов).</p>
 
-              <p class="review__about_text text">Откуда:
-                <span class="review__text">Москва</span>
-              </p>
+            </div>
 
-              <p class="review__about_text text">Куда:
-                <span class="review__text">Калининград</span>
-              </p>
+          </div>
+
+          <div class="review__slide slider__slide">
+            <div class="review__slide-content">
+              <div class="review__content">
+
+                <img class="review__content-photo" src="img/img2.jpg" alt="Photo">
+
+                <div class="review__about">
+
+                  <h3 class="review__about_name title">Елена</h3>
+                  <p class="review__about_company">Global Logic</p>
+
+                  <p class="review__about_text text">Посылка:
+                    <span class="review__text">товары</span>
+                  </p>
+
+                  <p class="review__about_text text">Откуда:
+                    <span class="review__text">Москва</span>
+                  </p>
+
+                  <p class="review__about_text text">Куда:
+                    <span class="review__text">Калининград</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
+                доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор –
+                всё
+                это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
+                отзывчивость.</p>
             </div>
           </div>
 
-          <p class="text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости
-            доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё
-            это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за
-            отзывчивость.</p>
+          <div class="review__slide slider__slide">
+            <div class="review__slide-content">
+              <div class="review__content">
+
+                <img class="review__content-photo" src="img/img1.jpg" alt="Photo">
+
+                <div class="review__about">
+
+                  <h3 class="review__about_name title">Дарья</h3>
+                  <p class="review__about_company">La Intuicion</p>
+
+                  <p class="review__about_text text">Посылка:
+                    <span class="review__text">товары</span>
+                  </p>
+
+                  <p class="review__about_text text">Откуда:
+                    <span class="review__text">Москва</span>
+                  </p>
+
+                  <p class="review__about_text text">Куда:
+                    <span class="review__text">Нижневартовск</span>
+                  </p>
+                </div>
+              </div>
+
+              <p class="text">Отличный и качественный сервис.
+                Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены,
+                что
+                помимо
+                удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности
+                (ведение
+                адресной базы, выбор и вызов курьера в пару кликов).</p>
+
+            </div>
+
+          </div>
 
         </div>
-
       </div>
 
       <div class="review__button-next">
@@ -331,42 +446,42 @@
 
     <div class="advantages__wrapper">
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p1.png" alt="service">
         </div>
         <div class="advantages__text">Бесплатный сервис</div>
       </div>
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p2.png" alt="drop">
         </div>
         <div class="advantages__text">Огромный выбор вариантов доставки</div>
       </div>
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p3.png" alt="best price">
         </div>
         <div class="advantages__text">4 параметра лучшего предложения</div>
       </div>
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p4.png" alt="order">
         </div>
         <div class="advantages__text">Удобство заказа</div>
       </div>
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p5.png" alt="online support">
         </div>
         <div class="advantages__text">Online-поддержка</div>
       </div>
 
-      <div class="advantages__item">
+      <div class="advantages__item" data-aos="zoom-out">
         <div class="advantages__img">
           <img src="img/p6.png" alt="tracking">
         </div>
@@ -382,7 +497,7 @@
 
     <div class="warranty__wrapper">
 
-      <div class="warranty__item">
+      <div class="warranty__item" data-aos="zoom-in-left">
 
         <div class="warranty__item-content">
 
@@ -398,7 +513,7 @@
         <a href="#" class="warranty__item-btn btn">подробнее</a>
       </div>
 
-      <div class="warranty__item">
+      <div class="warranty__item" data-aos="zoom-out">
         <div class="warranty__item-content">
 
           <div class="warranty__item-header">
@@ -414,7 +529,7 @@
         <a href="#" class="warranty__item-btn btn">подробнее</a>
       </div>
 
-      <div class="warranty__item">
+      <div class="warranty__item" data-aos="zoom-in-right">
         <div class="warranty__item-content">
 
           <div class="warranty__item-header">
@@ -433,7 +548,7 @@
 
     <div class="warranty__slider slider">
 
-      <div class="review__button-prev">
+      <div class="warranty__button-prev">
         <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2"
@@ -441,57 +556,62 @@
         </svg>
       </div>
 
-      <div class="warranty__slider-wrapper slider__wrapper">
+      <div class="warranty__slider-inner">
 
-        <div class="warranty__slider-slide slider__slide">
-          <div class="warranty__item-content">
+        <div class="warranty__slider-wrapper slider__wrapper">
 
-            <div class="warranty__item-header">
-              <img class="warranty__item-img" src="img/g1.png" alt="insurance">
-              <h3 class="warranty__item-title">Страховка отправлений</h3>
+          <div class="warranty__slider-slide slider__slide">
+            <div class="warranty__item-content">
+
+              <div class="warranty__item-header">
+                <img class="warranty__item-img" src="img/g1.png" alt="insurance">
+                <h3 class="warranty__item-title">Страховка отправлений</h3>
+              </div>
+
+              <p class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
+                клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
+
             </div>
-
-            <p class="warranty__item-text text">Контроль работы курьеров в онлайн режиме. Страхование по запросу
-              клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
-
+            <a href="#" class="warranty__item-btn btn">подробнее</a>
           </div>
-          <a href="#" class="warranty__item-btn btn">подробнее</a>
+
+          <div class="warranty__slider-slide slider__slide">
+            <div class="warranty__item-content">
+
+              <div class="warranty__item-header">
+                <img class="warranty__item-img" src="img/g2.png" alt="calculation">
+                <h3 class="warranty__item-title">Прозрачность расчетов</h3>
+              </div>
+
+              <p class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться
+                с
+                каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
+                сервисом</p>
+
+            </div>
+            <a href="#" class="warranty__item-btn btn">подробнее</a>
+          </div>
+
+          <div class="warranty__slider-slide slider__slide">
+            <div class="warranty__item-content">
+
+              <div class="warranty__item-header">
+                <img class="warranty__item-img" src="img/g3.png" alt="supplier">
+                <h3 class="warranty__item-title">Лучшие поставщики</h3>
+              </div>
+
+              <p class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
+                Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p>
+
+            </div>
+            <a href="#" class="warranty__item-btn btn">подробнее</a>
+          </div>
+
         </div>
 
-        <div class="warranty__slider-slide slider__slide">
-          <div class="warranty__item-content">
-
-            <div class="warranty__item-header">
-              <img class="warranty__item-img" src="img/g2.png" alt="calculation">
-              <h3 class="warranty__item-title">Прозрачность расчетов</h3>
-            </div>
-
-            <p class="warranty__item-text text">Чтобы узнать точную стоимость отправления вам не нужно связываться
-              с
-              каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим
-              сервисом</p>
-
-          </div>
-          <a href="#" class="warranty__item-btn btn">подробнее</a>
-        </div>
-
-        <div class="warranty__slider-slide slider__slide">
-          <div class="warranty__item-content">
-
-            <div class="warranty__item-header">
-              <img class="warranty__item-img" src="img/g3.png" alt="supplier">
-              <h3 class="warranty__item-title">Лучшие поставщики</h3>
-            </div>
-
-            <p class="warranty__item-text text">Мы работаем с самыми надежными и известными операторами доставки.
-              Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p>
-
-          </div>
-          <a href="#" class="warranty__item-btn btn">подробнее</a>
-        </div>
       </div>
 
-      <div class="review__button-next">
+      <div class="warranty__button-next">
         <svg class="slider__arrows" width="32" height="32" viewBox="0 0 32 32" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2"
@@ -510,9 +630,9 @@
     <div class="faq__wrapper">
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -523,9 +643,9 @@
       </div>
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -536,9 +656,9 @@
       </div>
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           Вы не сможете доставить посылку за границу
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -549,9 +669,9 @@
       </div>
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           Вы не занимаетесь такими простыми грузами, как мебель
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -562,9 +682,9 @@
       </div>
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           Я отправляю вместе с коллегами, мы можем легко запутаться где чьё
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -575,9 +695,9 @@
       </div>
 
       <div class="faq__item">
-        <h3 class="faq__item-heading text">
+        <div class="faq__item-heading text">
           Нужно заполнять кучу документов
-        </h3>
+        </div>
 
         <div class="faq__item-body">
           <div class="faq__item-content">
@@ -595,7 +715,7 @@
 
     <div class="partners__slider slider">
 
-      <div class="review__button-prev">
+      <div class="partners__button-prev">
         <svg class="slider__arrows" width="33" height="32" viewBox="0 0 33 32" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M16.5084 1.93481L2.36629 16.077L16.5084 30.2191" stroke="#C4C4C4" stroke-width="2"
@@ -603,58 +723,159 @@
         </svg>
       </div>
 
-      <div class="partners__wrapper slider__wrapper">
+      <div class="partners__inner">
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/bringo.png" alt="bringo">
-          </a>
-        </div>
+        <div class="partners__wrapper slider__wrapper">
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/cdek.png" alt="cdek">
-          </a>
-        </div>
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/bringo.png" alt="bringo">
+              </a>
+            </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/city_express.png" alt="city_express">
-          </a>
-        </div>
+          </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/dpd.png" alt="dpd">
-          </a>
-        </div>
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/cdek.png" alt="cdek">
+              </a>
+            </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/pony.png" alt="pony">
-          </a>
-        </div>
+          </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/spsr.png" alt="spsr">
-          </a>
-        </div>
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/city_express.png" alt="city_express">
+              </a>
+            </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/tnt.png" alt="tnt">
-          </a>
-        </div>
+          </div>
 
-        <div class="partners__slide slider__slide">
-          <a href="#">
-            <img src="img/partners/ups.png" alt="ups">
-          </a>
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/dpd.png" alt="dpd">
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/pony.png" alt="pony">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/spsr.png" alt="spsr">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/tnt.png" alt="tnt">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/ups.png" alt="ups">
+              </a>
+            </div>
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/bringo.png" alt="bringo">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/cdek.png" alt="cdek">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/city_express.png" alt="city_express">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/dpd.png" alt="dpd">
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/pony.png" alt="pony">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/spsr.png" alt="spsr">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/tnt.png" alt="tnt">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="partners__slide slider__slide">
+            <div class="partners__content">
+              <a href="#">
+                <img src="img/partners/ups.png" alt="ups">
+              </a>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
-      <div class="review__button-next">
+      <div class="partners__button-next">
         <svg class="slider__arrows" width="32" height="32" viewBox="0 0 32 32" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M16.1421 30.219L30.2842 16.0769L16.1421 1.93472" stroke="#C4C4C4" stroke-width="2"
@@ -771,6 +992,7 @@
   </footer>
   <div class="overlay"></div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 
 </body>

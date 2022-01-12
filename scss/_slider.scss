@@ -2,8 +2,9 @@
   @include displayFlex;
 
   &__wrapper {
-    @include displayFlex;
-    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(0);
   }
 
   &__arrows {

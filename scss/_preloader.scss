@@ -1,7 +1,4 @@
-$spinkit-size: 4em !default;
-$spinkit-spinner-color: #337ab7 !default;
-
-.preloader{
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,10 +13,6 @@ $spinkit-spinner-color: #337ab7 !default;
 }
 
 .sk-folding-cube {
-  $cubeCount: 4;
-  $animationDuration: 2.4s;
-  $delayRange: ($animationDuration / 2);
-
   width: $spinkit-size;
   height: $spinkit-size;
   position: relative;
@@ -61,15 +54,21 @@ $spinkit-spinner-color: #337ab7 !default;
 }
 
 @keyframes sk-folding-cube-angle {
-  0%, 10% {
+
+  0%,
+  10% {
     transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+
+  25%,
+  75% {
     transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+
+  90%,
+  100% {
     transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }

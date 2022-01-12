@@ -106,7 +106,6 @@
     &__text {
       padding-bottom: 30px;
     }
-
   }
 
   /*step*/
@@ -174,7 +173,6 @@
     &__btn {
       margin-bottom: 9px;
     }
-
   }
 
   /*review*/
@@ -186,12 +184,16 @@
       padding-bottom: 31px;
     }
 
-    &__wrapper {
+    &__inner {
       width: 580px;
     }
 
     &__slide {
-      width: 280px;
+      min-width: 300px;
+
+      &-content {
+        width: 280px;
+      }
     }
 
     &__content {
@@ -288,8 +290,6 @@
       }
 
     }
-
-
   }
 
   /*faq*/
@@ -324,12 +324,20 @@
     padding-top: 31px;
     padding-bottom: 39px;
 
-    &__wrapper {
+    &__inner {
       width: 600px;
     }
 
-    &__slide>a>img {
+    &__slide {
+      min-width: 76px;
+    }
+
+    &__content {
       width: 66px;
+
+      &>a>img {
+        width: 66px;
+      }
     }
   }
 
@@ -559,7 +567,6 @@
     &__btn {
       margin-bottom: 9px;
     }
-
   }
 
   /*review*/
@@ -574,14 +581,17 @@
       padding-bottom: 15px;
     }
 
-    &__wrapper {
+    &__inner {
       width: 230px;
     }
 
     &__slide {
-      min-width: 230px;
-    }
+      min-width: 231px;
 
+      &-content {
+        width: auto;
+      }
+    }
   }
 
   /*advantages*/
@@ -596,7 +606,7 @@
       margin-bottom: 25px;
     }
 
-    &__content {
+    &__wrapper {
       row-gap: 20px;
     }
 
@@ -637,19 +647,19 @@
     &__slider {
       display: flex;
 
-      &-wrapper {
+      &-inner {
         width: 230px;
+        overflow: hidden;
       }
 
       &-slide {
         height: 215px;
-        min-width: 230px;
+        min-width: 231px;
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-
     }
 
     &__item {
@@ -706,12 +716,12 @@
     padding-top: 17px;
     padding-bottom: 17px;
 
-    &__wrapper {
+    &__inner {
       width: 250px;
     }
 
-    &__slide>a>img {
-      min-width: 84px;
+    &__slide {
+      min-width: 83px;
     }
   }
 

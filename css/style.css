@@ -77,7 +77,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #337ab7;
+  background-color: #008DCD;
   -webkit-animation: sk-folding-cube-angle 2.4s infinite linear both;
           animation: sk-folding-cube-angle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
@@ -115,17 +115,20 @@
 }
 
 @-webkit-keyframes sk-folding-cube-angle {
-  0%, 10% {
+  0%,
+  10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
             transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
             transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0;
@@ -133,17 +136,20 @@
 }
 
 @keyframes sk-folding-cube-angle {
-  0%, 10% {
+  0%,
+  10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
             transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
             transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0;
@@ -297,13 +303,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .slider__arrows {
@@ -380,7 +385,7 @@ button {
 }
 
 .nav__mobile {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
@@ -682,11 +687,16 @@ header {
   padding-bottom: 70px;
 }
 
-.review__wrapper {
+.review__inner {
   width: 960px;
+  overflow: hidden;
 }
 
 .review__slide {
+  min-width: 500px;
+}
+
+.review__slide-content {
   width: 460px;
 }
 
@@ -838,7 +848,6 @@ header {
 
 .faq__item {
   width: 560px;
-  position: relative;
 }
 
 .faq__item-heading {
@@ -915,11 +924,16 @@ header {
   padding-bottom: 50px;
 }
 
-.partners__wrapper {
+.partners__inner {
   width: 980px;
+  overflow: hidden;
 }
 
 .partners__slide {
+  min-width: 130px;
+}
+
+.partners__content {
   width: 94px;
 }
 
@@ -1231,10 +1245,13 @@ header {
   .review__title {
     padding-bottom: 31px;
   }
-  .review__wrapper {
+  .review__inner {
     width: 580px;
   }
   .review__slide {
+    min-width: 300px;
+  }
+  .review__slide-content {
     width: 280px;
   }
   .review__content {
@@ -1336,10 +1353,16 @@ header {
     padding-top: 31px;
     padding-bottom: 39px;
   }
-  .partners__wrapper {
+  .partners__inner {
     width: 600px;
   }
-  .partners__slide > a > img {
+  .partners__slide {
+    min-width: 76px;
+  }
+  .partners__content {
+    width: 66px;
+  }
+  .partners__content > a > img {
     width: 66px;
   }
   /*footer*/
@@ -1540,11 +1563,14 @@ header {
     line-height: 34px;
     padding-bottom: 15px;
   }
-  .review__wrapper {
+  .review__inner {
     width: 230px;
   }
   .review__slide {
-    min-width: 230px;
+    min-width: 231px;
+  }
+  .review__slide-content {
+    width: auto;
   }
   /*advantages*/
   .advantages {
@@ -1556,7 +1582,7 @@ header {
     line-height: 34px;
     margin-bottom: 25px;
   }
-  .advantages__content {
+  .advantages__wrapper {
     row-gap: 20px;
   }
   .advantages__item {
@@ -1590,12 +1616,13 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
-  .warranty__slider-wrapper {
+  .warranty__slider-inner {
     width: 230px;
+    overflow: hidden;
   }
   .warranty__slider-slide {
     height: 215px;
-    min-width: 230px;
+    min-width: 231px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1654,11 +1681,11 @@ header {
     padding-top: 17px;
     padding-bottom: 17px;
   }
-  .partners__wrapper {
+  .partners__inner {
     width: 250px;
   }
-  .partners__slide > a > img {
-    min-width: 84px;
+  .partners__slide {
+    min-width: 83px;
   }
   /*footer*/
   .footer {

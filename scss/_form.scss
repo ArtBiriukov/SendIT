@@ -1,15 +1,15 @@
-.main__form{
+.main__form {
   display: grid;
   grid-template-columns: 360px 360px;
   grid-template-rows: 50px auto;
   grid-gap: 9px 30px;
   margin-bottom: 24px;
 
-  &-title{
+  &-title {
     margin-bottom: 16px;
   }
 
-  &-input{
+  &-input {
     color: #363636;
     background: none;
     padding: 15px 30px;
@@ -27,4 +27,3 @@
     grid-column: span 2;
   }
 }
-

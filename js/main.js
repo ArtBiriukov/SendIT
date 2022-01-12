@@ -2,25 +2,28 @@
 const preloaderEl = document.createElement('div');
 const body = document.querySelector('body');
 
-preloaderEl.innerHTML = ` 
-<div class="preloader">
-  <div class="loading">
-    <div class="sk-folding-cube">
-      <div class="sk-cube sk-cube-1"></div>
-      <div class="sk-cube sk-cube-2"></div>
-      <div class="sk-cube sk-cube-4"></div>
-      <div class="sk-cube sk-cube-3"></div>
+  preloaderEl.innerHTML = ` 
+  <div class="preloader">
+    <div class="loading">
+      <div class="sk-folding-cube">
+        <div class="sk-cube sk-cube-1"></div>
+        <div class="sk-cube sk-cube-2"></div>
+        <div class="sk-cube sk-cube-4"></div>
+        <div class="sk-cube sk-cube-3"></div>
+      </div>
     </div>
-  </div>
-</div> `;
+  </div> `;
 
-body.style.overflow = 'hidden';
-body.append(preloaderEl);
+  body.style.overflow = 'hidden';
+  body.append(preloaderEl);
 
-window.onload = function () {
-  body.style.overflow = '';
-  preloaderEl.remove();
-}
+  window.onload = function () {
+    body.style.overflow = '';
+    preloaderEl.remove();
+  }
+
+/*Анимация*/
+AOS.init();
 
 /*smoothScroll*/
 const navItemsEl = document.querySelectorAll('.nav__item');
@@ -44,7 +47,7 @@ navItemsEl.forEach(navItem => navItem.addEventListener('click', smoothScroll));
 
 /*modal window*/
 const modal = document.createElement('div'),
-      overlay = document.querySelector('.overlay');
+  overlay = document.querySelector('.overlay');
 
 /*Добавляем класс к созданному элементу*/
 modal.classList.add('modal');
@@ -93,21 +96,18 @@ faqItems.forEach(faqItem => {
 
   faqItem.addEventListener('click', () => {
 
-    const faqBody = faqItem.parentNode.querySelector('.faq__item-body'),
-          faqContent = faqItem.parentNode.querySelector('.faq__item-content').offsetHeight;
- 
-      if(!faqBody.style.height) {
-        faqBody.style.cssText = `height: ${faqContent}px`;
-        faqItem.classList.add('active');
-      } else {
-        faqBody.style.cssText = ``;
-        faqItem.classList.remove('active');
-      }
-  
+    faqItem.classList.toggle('active');
 
+    const faqBody = faqItem.nextElementSibling,
+    faqBodyHeight = faqBody.scrollHeight;
+
+    if(faqItem.classList.contains('active')){
+      faqBody.style.height = `${faqBodyHeight}px`;
+    } else {
+      faqBody.style.height = 0;
+    }
   })
 })
-
 
 /* Делегирование */
 document.addEventListener('click', event => {
@@ -135,7 +135,7 @@ document.addEventListener('click', event => {
 
   /*Если клик по оверлай */
   if (target.classList.contains('overlay')) {
-    
+
     /*закрыть модально окно */
     if (modal.classList.contains('modal__show')) {
       modalWindowClose();
@@ -147,3 +147,112 @@ document.addEventListener('click', event => {
     }
   }
 })
+
+/*Slider*/
+
+class Slider {
+
+  constructor({wrapper, sliders, nextButton, prewButton}) {
+    this.wrapper = document.querySelector(wrapper);
+    this.sliders = document.querySelectorAll(sliders);
+    this.nextButton = document.querySelector(nextButton);
+    this.prewButton = document.querySelector(prewButton);
+
+    this.position = 0;
+    this.interval = 4000;
+  }
+
+  init() {
+    this.controlSlider();
+    this.addSliderParams();
+    this.startSlide();
+  }
+
+  addSliderParams() {
+    /*Ширина слайдера*/
+    this.sliderViewport = +this.wrapper.offsetWidth;
+
+    for (const slider of this.sliders) {
+      /*Ширина одного слайда*/
+      this.sliderWidth = +slider.offsetWidth;
+    }
+
+    /*Количество слайдов на экране */
+    this.slidersCoutView = Math.ceil(this.sliderViewport / this.sliderWidth);
+
+    /*Количество страниц со слайдами*/
+    this.countSliderViewports = Math.ceil(this.sliders.length - this.slidersCoutView);
+  }
+
+  controlSlider() {
+    this.prewButton.addEventListener('click', this.prevSlider.bind(this));
+    this.nextButton.addEventListener('click', this.nextSlider.bind(this));
+  }
+
+  prevSlider() { 
+    if (this.position >= 0){
+      --this.position;
+      if (this.position < 0) {
+        this.position = this.countSliderViewports;
+      }
+    }
+    this.wrapper.style.transform = `translateX(-${this.sliderWidth * this.position}px)`;
+  }
+
+  nextSlider() {
+    if(this.position <= this.countSliderViewports) {
+      ++this.position;
+      if (this.position > this.countSliderViewports) {
+        this.position = 0;
+      }
+    }
+    this.wrapper.style.transform = `translateX(-${this.sliderWidth * this.position}px)`;
+  }
+
+  autoPlay() {
+   this.play = setInterval(this.nextSlider.bind(this), this.interval);
+  }
+
+  startSlide() {
+    this.autoPlay();
+
+    this.prewButton.addEventListener('mouseout', this.autoPlay.bind(this));
+    this.nextButton.addEventListener('mouseout', this.autoPlay.bind(this));
+
+    this.prewButton.addEventListener('mouseover', this.stopSlide.bind(this));
+    this.nextButton.addEventListener('mouseover', this.stopSlide.bind(this));
+  }
+
+  stopSlide() {
+    clearInterval(this.play);
+  }
+}
+
+const reviewConfigSlider = {
+  wrapper: '.review__wrapper',
+  sliders: '.review__slide',
+  nextButton: '.review__button-next',
+  prewButton: '.review__button-prev',
+}
+
+const warrantyConfigSlider = {
+  wrapper: '.warranty__slider-wrapper',
+  sliders: '.warranty__slider-slide',
+  nextButton: '.warranty__button-next',
+  prewButton: '.warranty__button-prev',
+}
+
+const partnersConfigSlider = {
+  wrapper: '.partners__wrapper',
+  sliders: '.partners__slide',
+  nextButton: '.partners__button-next',
+  prewButton: '.partners__button-prev',
+}
+
+const sliderReview = new Slider(reviewConfigSlider);
+const sliderWarranty = new Slider(warrantyConfigSlider);
+const sliderPartners = new Slider(partnersConfigSlider);
+
+sliderReview.init();
+sliderWarranty.init();
+sliderPartners.init();
