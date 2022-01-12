@@ -1622,7 +1622,7 @@ header {
   }
   .warranty__slider-slide {
     height: 215px;
-    min-width: 231px;
+    min-width: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1738,6 +1738,9 @@ header {
   }
   .main__form-btn {
     height: 40px;
+  }
+  .modal__form-btn {
+    padding: 16px 35px;
   }
 }
 
