@@ -2,7 +2,7 @@
 const preloaderEl = document.createElement('div');
 const body = document.querySelector('body');
 
-  preloaderEl.innerHTML = ` 
+preloaderEl.innerHTML = ` 
   <div class="preloader">
     <div class="loading">
       <div class="sk-folding-cube">
@@ -14,13 +14,13 @@ const body = document.querySelector('body');
     </div>
   </div> `;
 
-  body.style.overflow = 'hidden';
-  body.append(preloaderEl);
+body.style.overflow = 'hidden';
+body.append(preloaderEl);
 
-  window.onload = function () {
-    body.style.overflow = '';
-    preloaderEl.remove();
-  }
+window.onload = function () {
+  body.style.overflow = '';
+  preloaderEl.remove();
+}
 
 /*Анимация*/
 AOS.init();
@@ -99,9 +99,9 @@ faqItems.forEach(faqItem => {
     faqItem.classList.toggle('active');
 
     const faqBody = faqItem.nextElementSibling,
-    faqBodyHeight = faqBody.scrollHeight;
+      faqBodyHeight = faqBody.scrollHeight;
 
-    if(faqItem.classList.contains('active')){
+    if (faqItem.classList.contains('active')) {
       faqBody.style.height = `${faqBodyHeight}px`;
     } else {
       faqBody.style.height = 0;
@@ -152,7 +152,12 @@ document.addEventListener('click', event => {
 
 class Slider {
 
-  constructor({wrapper, sliders, nextButton, prewButton}) {
+  constructor({
+    wrapper,
+    sliders,
+    nextButton,
+    prewButton
+  }) {
     this.wrapper = document.querySelector(wrapper);
     this.sliders = document.querySelectorAll(sliders);
     this.nextButton = document.querySelector(nextButton);
@@ -175,11 +180,16 @@ class Slider {
     for (const slider of this.sliders) {
       /*Ширина одного слайда*/
       this.sliderWidth = +slider.offsetWidth;
+
+      /*Если ширина экрана меняется, то перезаписывается ширина слайда */
+      window.addEventListener('resize', () => {
+        this.sliderWidth = +slider.offsetWidth;
+      });
     }
 
     /*Количество слайдов на экране */
     this.slidersCoutView = Math.ceil(this.sliderViewport / this.sliderWidth);
-
+    console.log(this.slidersCoutView);
     /*Количество страниц со слайдами*/
     this.countSliderViewports = Math.ceil(this.sliders.length - this.slidersCoutView);
   }
@@ -189,8 +199,8 @@ class Slider {
     this.nextButton.addEventListener('click', this.nextSlider.bind(this));
   }
 
-  prevSlider() { 
-    if (this.position >= 0){
+  prevSlider() {
+    if (this.position >= 0) {
       --this.position;
       if (this.position < 0) {
         this.position = this.countSliderViewports;
@@ -200,7 +210,7 @@ class Slider {
   }
 
   nextSlider() {
-    if(this.position <= this.countSliderViewports) {
+    if (this.position <= this.countSliderViewports) {
       ++this.position;
       if (this.position > this.countSliderViewports) {
         this.position = 0;
@@ -210,7 +220,7 @@ class Slider {
   }
 
   autoPlay() {
-   this.play = setInterval(this.nextSlider.bind(this), this.interval);
+    this.play = setInterval(this.nextSlider.bind(this), this.interval);
   }
 
   startSlide() {
@@ -253,6 +263,6 @@ const sliderReview = new Slider(reviewConfigSlider);
 const sliderWarranty = new Slider(warrantyConfigSlider);
 const sliderPartners = new Slider(partnersConfigSlider);
 
-sliderReview.init();
-sliderWarranty.init();
+// sliderReview.init();
+// sliderWarranty.init();
 sliderPartners.init();
