@@ -189,7 +189,6 @@ class Slider {
 
     /*Количество слайдов на экране */
     this.slidersCoutView = Math.ceil(this.sliderViewport / this.sliderWidth);
-    console.log(this.slidersCoutView);
     /*Количество страниц со слайдами*/
     this.countSliderViewports = Math.ceil(this.sliders.length - this.slidersCoutView);
   }
@@ -263,6 +262,6 @@ const sliderReview = new Slider(reviewConfigSlider);
 const sliderWarranty = new Slider(warrantyConfigSlider);
 const sliderPartners = new Slider(partnersConfigSlider);
 
-// sliderReview.init();
-// sliderWarranty.init();
+sliderReview.init();
+sliderWarranty.init();
 sliderPartners.init();
