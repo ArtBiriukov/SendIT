@@ -3,7 +3,7 @@
 ## Разработка сайта для отправки различных посылок __Send it__.
 
 ## Демо
-https://artbiryukov.github.io/SendIT/
+[Ссылка на лендинг](https://artbiriukov.github.io/SendIT/)
 
 ## Технологии
 <ul>
